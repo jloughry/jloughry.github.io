@@ -27,3 +27,6 @@ sync:
 vi:
 	$(editor) $(target)
 
+notes:
+	(cd ../notes && make vi)
+
