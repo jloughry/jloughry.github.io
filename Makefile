@@ -15,8 +15,10 @@ all: commit
 
 commit:
 	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(html_file)
-	git commit -m "commit from Makefile" -a
+	git add $(html_file)
 	@echo $$(($$(cat $(build_counter)) + 1)) > $(build_counter)
+	git add $(build_counter)
+	git commit -m "commit from Makefile" -a
 
 vi:
 	$(editor) $(target)
