@@ -22,6 +22,9 @@ commit:
 	@echo $$(($$(cat $(build_counter)) + 1)) > $(build_counter)
 	git add .
 	git commit -am "commit from Makefile $(timestamp)"
+	make sync
+
+sync:
 	git pull --rebase
 	git push
 
