@@ -1,9 +1,8 @@
-target = index.html
+target = $(html_file)
 
 html_file = index.html
 scheme_file = index.scm
 
-editor = vi
 build_counter = build_counter.txt
 
 build_number_value = $(shell cat ${build_counter})
@@ -14,7 +13,7 @@ all:
 	make commit
 
 vi:
-	$(editor) $(target)
+	vi $(target)
 
 spell:
 	aspell --lang=en_GB check README.md
