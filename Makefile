@@ -16,4 +16,3 @@ vi:
 	vi $(target)
 
 include common.mk
-
