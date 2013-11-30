@@ -11,3 +11,9 @@ only; there are no exploitable interfaces for an attacker to try.
 Scheme source code is notional only at this point, prototype data for the CSS implementation
 I plan to do next.
 
+The favicon is composed of a lowercase italic Palatino Linotype `f' in 24 points between
+un-italicised parentheses; the character spacing of all three characters is extended by 4
+points. The intent is for the outer rim of the parentheses to match as nearly as possible
+a perfect circle, and for the serifs on the `f' to match the angle of the horns of the
+parentheses so it flows together like a *yin&ndash;yang& symbol.
+
