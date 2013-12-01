@@ -15,5 +15,5 @@ The favicon is composed of a lowercase italic Palatino Linotype `f' in 24 points
 un-italicised parentheses; the character spacing of all three characters is extended by 4
 points. The intent is for the outer rim of the parentheses to match as nearly as possible
 a perfect circle, and for the serifs on the `f' to match the angle of the horns of the
-parentheses so it flows together like a *yin&ndash;yang& symbol.
+parentheses so it flows together like a *yin&ndash;yang* symbol.
 
