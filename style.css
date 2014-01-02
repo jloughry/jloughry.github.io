@@ -1,0 +1,78 @@
+body {
+	color: black;
+	background-color: white;
+}
+
+.punct {
+	color: black;
+	font-weight: bold;
+}
+
+.keyword {
+	color: white;
+}
+
+headline-keyword {
+	color: gray;
+}
+
+.identifier {
+	color: DeepPink;
+}
+
+.function {
+	font-style: italic;
+	margin-right: 0.25em;
+	color: DeepPink;
+}
+
+.headline-function {
+	font-style: italic;
+	margin-right: 0.25em;
+}
+
+.comment {
+	color: Lime;
+	margin-left: 1em;
+}
+
+.headline-comment {
+	color: lightgray;
+	margin-left: 1em;
+}
+
+.string {
+	color: LightBlue;
+}
+
+.string:before {
+	content: "\201c"; /* Unicode left double quotation mark */
+}
+
+.string:after {
+	content: "\201d"; /* in decimal, 8221 */
+}
+
+.code {
+	background-color: #5f5f5f;
+	line-height: 1.5;
+}
+
+.footnote {
+	font-size: 60%;
+}
+
+h1 {
+	color: gray;
+}
+
+hr.footnote {
+	margin-top: 50px;
+}
+
+.posting-date {
+	font-style: italic;
+	font-size: 75%;
+	margin-top: -18px;
+}
+

@@ -1,6 +1,7 @@
 target = $(html_file)
 
 html_file = index.html
+css_file = style.css
 scheme_file = index.scm
 
 build_counter = build_counter.txt
@@ -15,4 +16,8 @@ all::
 vi:
 	vi $(target)
 
+style:
+	vi $(css_file)
+
 include common.mk
+

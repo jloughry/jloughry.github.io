@@ -1,1 +1,1 @@
-started to add CSS
+a simple implementation of syntax highlighting through CSS.

@@ -7,42 +7,44 @@
 		<meta name="description"content="Blogging about Scheme-related topics"/>
 		<title>(call/cc latest)</title>
 		<link rel="shortcut icon" href="favicon.ico"/>
-		<style type="text/css">
-			body {
-				color: black;
-				background-color: white;
-			}
-		</style>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1>(<font color="gray"><strong>call-with-current-continuation</strong>
-			<em>latest</em></font> ) &nbsp; <font color="lightgray">;; blog</font></h1>
-		<p>TODO: CSS for syntax highlighting</p>
-		<ul>
-			<li>screen background: #5f5f5f</li>
-			<li>keywords: white</li>
-			<li>identifiers: DeepPink</li>
-			<li>strings: LightBlue</li>
-			<li>functions: <em>italic</em></li>
-			<li>comments: Lime</li>
-			<li>punctuation: <strong>boldface</strong> black</li>
-		</ul>
-		<table width="100%" bgcolor="#5f5f5f">
-			<tr>
-				<td><strong>(</strong><font color="white">call-with-current-continuation</font>
-					<font color="DeepPink"><em>latest</em></font>
-					<strong>)</strong> &nbsp;
-					<font color="Lime">;; blog</font></td>
-			</tr>
-			<tr><td><font color="lightblue">"string example"</font></td></tr>
-			<tr><td>&nbsp;</td></tr>
-		</table>
-		<br>
-		<!-- put this here as a test to see if it attracts any mail -->
-		Email me here: <a href="mailto:joe@call-with-current-continuation.com">joe@call-with-current-continuation.com</a>
-		<br><br><br>
-		<p>
-		<font size="-5"><!-- BUILD NUMBER -->Build 36</font>
+		<h1>
+			<span class="punct">(</span><!--
+			--><span class="headline-keyword">call-with-current-continuation</span>
+			<span class="headline-function">latest</span><!--
+			--><span class="punct">)</span>
+			<span class="headline-comment">;; blog</span>
+		</h1>
+
+<h2>Testing Some Syntax Highlighting Code</h2>
+<p class="posting-date">1st Jan 2014</p>
+
+<p>
+I've been experimenting with CSS for syntax highlighting. TODO: selector inheritance,
+line-height, more semantic mark-up.
+</p>
+
+		<p class="code">
+			<span class="punct">(</span>
+			<span class="keyword">call-with-current-continuation</span>
+			<span class="function">latest</span>
+			<span class="punct">)</span>
+			<span class="comment">;; blog</span>
+			<br/>
+			<span class="string">string example</span>
+			<br/>
+			&nbsp;
 		</p>
+
+<h2>About this blog</h2>
+
+		Email me here:
+		<a href="mailto:joe@call-with-current-continuation.com"><!--
+		-->joe@call-with-current-continuation.com</a>
+
+		<hr class="footnote">
+		<p class="footnote"><!-- BUILD NUMBER -->Build 36</p>
 	</body>
 </html>
