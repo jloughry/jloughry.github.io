@@ -1,1 +1,1 @@
-copied the Unicode_IEC_symbol_font.ttf file here too so it can be served out.
+pasted Unicode characters directly into unicode_font_test_page.html via Notepad.

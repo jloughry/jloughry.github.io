@@ -3,6 +3,7 @@ target = $(html_file)
 html_file = index.html
 css_file = style.css
 scheme_file = index.scm
+unicode_test = unicode_font_test_page.html
 
 build_counter = build_counter.txt
 
@@ -15,6 +16,9 @@ all::
 
 vi:
 	vi $(target)
+
+unicode:
+	vi $(unicode_test)
 
 style:
 	vi $(css_file)
