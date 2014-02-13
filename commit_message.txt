@@ -1,3 +1,1 @@
-syntax highlighting in Firefox "view source" pointed out a couple of errors
-I'd not noticed; first, a missing space in a meta tag; and second, don't put
-<ul> inside <p> tags.
+moved unicode_font_test_page.html to here so it can be exercised on a live web server
