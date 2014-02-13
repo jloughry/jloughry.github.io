@@ -1,1 +1,1 @@
-pasted Unicode characters directly into unicode_font_test_page.html via Notepad.
+improved the CSS font embedding test page; updated Makefile to make the test page easier to edit
