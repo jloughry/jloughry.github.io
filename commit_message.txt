@@ -1,1 +1,1 @@
-moved unicode_font_test_page.html to here so it can be exercised on a live web server
+copied the Unicode_IEC_symbol_font.ttf file here too so it can be served out.
