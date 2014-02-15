@@ -1,1 +1,1 @@
-improved the CSS font embedding test page; updated Makefile to make the test page easier to edit
+added a "pause" message before the CSS paragraph in HTML font encoding test page.
