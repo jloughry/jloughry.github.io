@@ -1,0 +1,7 @@
+This is an experimental site I use for learning. I'm a grad student in the department of computer
+science at the University of Oxford; my thesis is about how computer security testers co-operate with
+other security testers in different organisations (or countries, or security classification levels)
+whom they can't talk to directly for fear of violating security rules. Cross domain systems are like
+that. For information on why this file exists, see http://humanstxt.org/ and if you want to find me,
+try email to joe.loughry@stx.ox.ac.uk.
+

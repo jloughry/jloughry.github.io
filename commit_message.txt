@@ -1,1 +1,1 @@
-added a "pause" message before the CSS paragraph in HTML font encoding test page.
+added humans.txt
