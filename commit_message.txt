@@ -1,1 +1,1 @@
-added humans.txt
+added robots.txt, hackers.txt
