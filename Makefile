@@ -23,5 +23,10 @@ unicode:
 style:
 	vi $(css_file)
 
+spell::
+	aspell --lang=en_GB -H check robots.txt
+	aspell --lang=en_GB -H check humans.txt
+	aspell --lang=en_GB -H check hackers.txt
+
 include common.mk
 

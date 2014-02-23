@@ -12,7 +12,7 @@ http://en.wikipedia.org/wiki/St_Cross_College,_Oxford
 	Argent a cross potent purpure a quarter counterchanged
 
 There is not a syllable wasted in that description. As a programming language, it's beautiful.
-It's context-free with rabies. It's a complete description; anyone who knows heralic language
+It's context-free with rabies. It's a complete description; anyone who knows heraldic language
 can use it to draw unambiguously the whole design, but every part of the description that isn't
 implicit or deducible is omitted. Unpacked, it means:
 
