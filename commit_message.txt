@@ -1,1 +1,1 @@
-adjust spacing on footnote in CSS
+experimenting with formatting
