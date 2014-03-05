@@ -1,1 +1,1 @@
-experimenting with formatting
+HTML font embedding test page is now linked to here from Unicode/README.md at GitHub
