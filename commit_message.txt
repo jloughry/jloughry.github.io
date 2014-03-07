@@ -1,1 +1,1 @@
-change COMBINING RIGHT ARROWHEAD ABOVE to COMBINING CIRCUMFLEX ACCENT (six times)
+fix character code of COMBINING CEDILLA and add running text below.
