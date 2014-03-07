@@ -1,2 +1,2 @@
-after much testing, I've concluded that stacked diacritics don't render properly in Firefox,
-Safari, Chrome, or IE.
+change some of the combining diacritics to ones I am sure I have font support for in the default
+fonts
