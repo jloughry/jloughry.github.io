@@ -1,1 +1,2 @@
-improve spacing of running text
+after much testing, I've concluded that stacked diacritics don't render properly in Firefox,
+Safari, Chrome, or IE.
