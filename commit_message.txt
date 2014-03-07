@@ -1,2 +1,1 @@
-change some of the combining diacritics to ones I am sure I have font support for in the default
-fonts
+fixed broken HTML character entity
