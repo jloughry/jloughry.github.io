@@ -1,1 +1,1 @@
-test of repeated combining diacritical marks (and moved into a table to make it easier to read)
+change COMBINING RIGHT ARROWHEAD ABOVE to COMBINING CIRCUMFLEX ACCENT (six times)
