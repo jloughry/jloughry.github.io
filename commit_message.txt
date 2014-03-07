@@ -1,1 +1,1 @@
-experimenting with combining diacritical marks
+test of repeated combining diacritical marks (and moved into a table to make it easier to read)
