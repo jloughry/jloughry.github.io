@@ -1,1 +1,1 @@
-fix character code of COMBINING CEDILLA and add running text below.
+improve spacing of running text
