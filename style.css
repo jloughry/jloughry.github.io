@@ -4,7 +4,7 @@ body {
 }
 
 .punct {
-	color: black;
+	color: yellow;
 	font-weight: bold;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 headline-keyword {
-	color: gray;
+	color: white;
 }
 
 .identifier {
@@ -27,6 +27,7 @@ headline-keyword {
 }
 
 .headline-function {
+	color: DeepPink;
 	font-style: italic;
 	margin-right: 0.25em;
 }
@@ -37,7 +38,7 @@ headline-keyword {
 }
 
 .headline-comment {
-	color: lightgray;
+	color: Lime;
 	margin-left: 1em;
 }
 
@@ -54,7 +55,7 @@ headline-keyword {
 }
 
 .code {
-	background-color: #5f5f5f;
+	background-color: DarkBlue;
 	line-height: 1.5;
 }
 
@@ -63,7 +64,11 @@ headline-keyword {
 }
 
 h1 {
-	color: gray;
+	margin-top: -8px;
+	line-height: 250%;
+	background-color: DarkBlue;
+	color: white;
+	font-weight: normal;
 }
 
 hr.footnote {

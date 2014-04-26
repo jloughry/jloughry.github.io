@@ -1,1 +1,1 @@
-changed font file in unicode_font_test_page.html to use font from here, not GitHub (cross-site)
+change code colours to match editor preferences

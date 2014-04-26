@@ -9,16 +9,23 @@ build_counter = build_counter.txt
 
 build_number_value = $(shell cat ${build_counter})
 
+temporary_files = *.bak consolidated_bibtex_file.bib
+
 all::
 	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(html_file)
 	@echo $$(($$(cat $(build_counter)) + 1)) > $(build_counter)
 	make commit
+
+clean::
+	rm -f $(temporary_files)
 
 vi:
 	vi $(target)
 
 unicode:
 	vi $(unicode_test)
+
+css: style
 
 style:
 	vi $(css_file)
