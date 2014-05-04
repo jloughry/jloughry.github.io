@@ -16,20 +16,25 @@ headline-keyword {
 	color: white;
 }
 
-.identifier {
-	color: DeepPink;
-}
-
 .function {
 	font-style: italic;
 	margin-right: 0.25em;
 	color: DeepPink;
 }
 
+.constant {
+	color: Gray;
+	font-weight: bold;
+}
+
+.identifier {
+	color: Orange;
+}
+
 .headline-function {
-	color: DeepPink;
 	font-style: italic;
 	margin-right: 0.25em;
+	color: DeepPink;
 }
 
 .comment {
@@ -55,8 +60,11 @@ headline-keyword {
 }
 
 .code {
+	font-family: "Lucida Console", Serif;
 	background-color: DarkBlue;
-	line-height: 1.5;
+	line-height: 1.25;
+	padding-top: 5mm;
+	padding-bottom: 5mm;
 }
 
 .footnote {
