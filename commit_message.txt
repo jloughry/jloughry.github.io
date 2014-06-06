@@ -1,1 +1,1 @@
-add type="image/x-icon" to link rel in HTML head to support IE
+workaround GitHub Pages lack of support for symbolic links.

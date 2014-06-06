@@ -18,3 +18,13 @@ the parentheses to match as nearly as possible a perfect circle, and for the ser
 'f' to match the angle of the horns of the parentheses so it flows together like a &#9775;
 symbol.
 
+Symlink errors in GitHub Pages
+------------------------------
+
+Recently, `make` stopped working correctly because GitHub changed the way they
+support symbolic links (in GitHub Pages). Evidently they are disallowed now. One
+suggested workaround is to use a
+[git submodule](https://help.github.com/articles/using-submodules-with-pages).
+For now, the `common.mk` file is copied directly into this directory as a regular
+file until I figure out a better way to fix it.
+
