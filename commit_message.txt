@@ -1,1 +1,1 @@
-tune colour syntax highlighting; better example code
+add type="image/x-icon" to link rel in HTML head to support IE
