@@ -1,1 +1,1 @@
-testing with local Makefile and get_commit_message.sh; removed BibTeX file from Makefile.
+try a non-empty .nojekyll file
