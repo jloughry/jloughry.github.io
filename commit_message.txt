@@ -1,1 +1,1 @@
-hypothesis: the page build problem might be due to consolidated_bibtex_file symlink
+unlink the symlink to get_commit_message.sh
