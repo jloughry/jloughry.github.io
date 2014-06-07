@@ -37,17 +37,6 @@ readme:
 	vi README.md
 
 #
-# Link to the BibTeX file if the link doesn't already exist (so we always have latest).
-# This will leave some spam in directories that don't care about BibTeX, but it's not
-# easy to prevent without a complicated and fragile mechanism.
-#
-
-symlink-to-bibtex-file:
-	@if [ ! -L $(bibtex_file) ]; then           \
-		ln -s $(bibtex_source) $(bibtex_file) ; \
-	fi
-
-#
 # I have been completely unable to find a solution to the problem of Makefiles
 # failing to notice when the consolidated_bibtex_file.bib has changed. It's as
 # if `make' is not looking through the symlink, but the manual says it should.
@@ -61,13 +50,6 @@ $(bibtex_file): symlink-to-bibtex-file
 
 $(commit_message): $(get_commit_message)
 	@./$(get_commit_message)
-
-#
-# make symlink to shell scripts if they don't already exist
-#
-
-$(get_commit_message):
-	ln -s $(github_repository_level)/Makefiles/$(get_commit_message)
 
 commit:
 	make commit_only
