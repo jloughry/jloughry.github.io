@@ -1,1 +1,1 @@
-try turning Jekyll off
+hypothesis: the page build problem might be due to consolidated_bibtex_file symlink
