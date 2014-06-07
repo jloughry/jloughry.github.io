@@ -1,1 +1,1 @@
-workaround GitHub Pages lack of support for symbolic links.
+try turning Jekyll off
