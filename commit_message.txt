@@ -1,1 +1,1 @@
-try a non-empty .nojekyll file
+testing with travis.ci instead of locally installed Jekyll
