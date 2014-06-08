@@ -1,1 +1,1 @@
-try .nojekyll with travis.ci
+eliminate common.mk file and copy its contents directly into Makfile
