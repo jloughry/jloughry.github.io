@@ -1,1 +1,1 @@
-testing with travis.ci instead of locally installed Jekyll
+try .nojekyll with travis.ci
