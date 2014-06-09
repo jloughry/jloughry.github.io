@@ -43,7 +43,7 @@
 	<li>more semantic mark-up</li>
 </ul>
 
-<div id="syntax-highlighting-test">
+<div id="syntax-highlighting-test-1">
 	<div class="code">
 		<span class="punct">(</span><!--
 		--><span class="keyword">define</span>
@@ -81,6 +81,37 @@
 	</div>
 </div>
 
+<p>Here is a test using the auto-indent &lt;div&gt; method:</p>
+
+<div id="syntax-highlighting-test-2">
+	<div class="code">
+		<div class="syntax-block">
+			<span class="punct">(</span><span class="keyword">define</span>
+			<span class="identifier">length</span>
+			<div class="syntax-block">
+				<span class="punct">(</span><span class="keyword">lambda</span>
+				<span class="punct">(</span><span class="identifier">l</span><span
+					class="punct">)</span>
+				<div class="syntax-block">
+					<span class="punct"(</span><span class="keyword">if</span>
+					<span class="punct"(</span><span class="function">null?</span>
+					<span class="identifier">l</span><span class="punct">)</span>
+					&nbsp;&nbsp;
+					<span class="comment">; this is a comment</span>
+					<br/>
+					<span class="constant">0</span>
+					</br>
+					<span class="punct">(</span><span class="function">+</span>
+					<span class="constant">1</span>
+					<span class="punct"(</span><span class="function">length</span>
+					<span class="punct">(</span><span class="function">cdr</span>
+					<span class="identifier">l</span><span class="punct">))))))</span>
+				</div>
+			</div>
+		</div>
+	</div>
+<div>
+
 <h2>About this blog</h2>
 
 		<!-- the following is a useful method for wrapping long lines -->
@@ -90,6 +121,6 @@
 		-->joe@call-with-current-continuation.com</a>
 
 		<hr class="footnote">
-		<p class="footnote"><!-- BUILD NUMBER -->Build 47</p>
+		<p class="footnote"><!-- BUILD NUMBER -->Build 48</p>
 	</body>
 </html>

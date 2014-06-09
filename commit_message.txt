@@ -1,1 +1,1 @@
-add a couple of nested <div> elements for testing
+added more nested <div> elements to automatically indent blocks in code samples; look at the DOM.

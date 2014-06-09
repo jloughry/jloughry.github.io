@@ -55,3 +55,14 @@ maintained; in addition, most of the contents of `common.mk` have been moved int
 Fix the Makefile maintenance mechanism, simplify handling of the consolidated BibTeX
 file, and make symlinks work in here again by means of sub modules.
 
+DOM Experiments
+---------------
+
+I added some nested &lt;div&gt; elements to the HTML and began to experiment with
+using &lt;div&gt; to automatically indent syntax-highlighted code samples without
+having to employ lots of repeated &amp;nbsp; entities.
+
+### TODO
+
+Look at the DOM now.
+

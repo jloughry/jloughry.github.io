@@ -89,3 +89,8 @@ hr.footnote {
 	margin-top: -18px;
 }
 
+.syntax-block {
+	padding-left: 22px;
+	text-indent: -22px;
+}
+
