@@ -1,1 +1,1 @@
-update README
+improve <div> CSS for in-line blocks.

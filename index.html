@@ -21,12 +21,14 @@
 		</h1>
 
 <h2>DOM Experiments</h2>
-<p class="posting-date">8th June 2014</p>
+<p class="posting-date">9th June 2014</p>
 
 <p>The two examples of syntax-highlighted code below were done using two different
 methods for implementing the indentation seen: the first uses repeated &amp;nbsp;
-entities (as many as needed), and the second was done with &lt;div&gt; elements that
-implement hanging indents of the whole block automatically.</p>
+entities (as many as needed), and the second was done with
+<span class="html-tag">div</span> blocks that implement hanging indents of the
+whole <em>s</em>-expression block automatically (as well as some special <code>inline</code>
+<span class="html-tag">div</span> tags that don&apos;t automatically put a newline after).</p>
 
 <h2>Added <a href="http://call-with-current-continuation.com/humans.txt">humans.txt</a> file.</h2>
 <p class="posting-date">23rd February 2014</p>
@@ -45,6 +47,9 @@ implement hanging indents of the whole block automatically.</p>
 	<li>line-height</li>
 	<li>more semantic mark-up</li>
 </ul>
+
+<p>The first code example uses lots of <span class="html-tag">span</span> but no special
+<span class="html-tag">div</span> tags:</p>
 
 <div id="syntax-highlighting-test-1">
 	<div class="code">
@@ -84,36 +89,51 @@ implement hanging indents of the whole block automatically.</p>
 	</div>
 </div>
 
-<p>Here is a test using the auto-indent &lt;div&gt; method:</p>
+<p>The second example uses the auto-indent <span class="html-tag">div</span> method.
+Note that no <code>&amp;nbsp;</code> character entities are needed:</p>
 
 <div id="syntax-highlighting-test-2">
 	<div class="code">
-		<div class="syntax-block">
+		<div class="syntax-multiline-block">
 			<span class="punct">(</span><span class="keyword">define</span>
 			<span class="identifier">length</span>
-			<div class="syntax-block">
+			<div class="syntax-multiline-block">
 				<span class="punct">(</span><span class="keyword">lambda</span>
 				<span class="punct">(</span><span class="identifier">l</span><span
 					class="punct">)</span>
-				<div class="syntax-block">
-					<span class="punct"(</span><span class="keyword">if</span>
-					<span class="punct"(</span><span class="function">null?</span>
+				<div class="syntax-multiline-block">
+					<span class="punct">(</span><span class="keyword">if</span>
+					<span class="punct">(</span><span class="function">null?</span>
 					<span class="identifier">l</span><span class="punct">)</span>
-					&nbsp;&nbsp;
-					<span class="comment">; this is a comment</span>
+					<div class="syntax-comment">; this is a comment</div>
 					<br/>
 					<span class="constant">0</span>
 					</br>
-					<span class="punct">(</span><span class="function">+</span>
-					<span class="constant">1</span>
-					<span class="punct"(</span><span class="function">length</span>
-					<span class="punct">(</span><span class="function">cdr</span>
-					<span class="identifier">l</span><span class="punct">))))))</span>
+					<div class="syntax-same-line-block">
+						<span class="punct">(</span><span class="function">+</span>
+						<span class="constant">1</span>
+						<div class="syntax-same-line-block">
+							<span class="punct">(</span><span class="function">length</span>
+							<div class="syntax-same-line-block">
+								<span class="punct">(</span><span class="function">cdr</span>
+								<span class="identifier">l</span><span class="punct">))))))</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 <div>
+
+<p>It&apos;s a little disappointing that closing parentheses cannot be put inside the
+<span class="html-tag">div</span> blocks if we want to stack all the parens at the end,
+but if stacking the closing parens is not desired, then putting the closing paren
+<em>after</em> the closing <span class="html-tag">/div</span> keeps the indentation
+levels of the closing parens where they ought to be (<em>i.e.</em>, don&apos;t put
+closing parens inside the closing <span class="html-tag">/div</span>.)
+
+</p>
 
 <h2>About this blog</h2>
 
@@ -124,6 +144,6 @@ implement hanging indents of the whole block automatically.</p>
 		-->joe@call-with-current-continuation.com</a>
 
 		<hr class="footnote">
-		<p class="footnote"><!-- BUILD NUMBER -->Build 49</p>
+		<p class="footnote"><!-- BUILD NUMBER -->Build 50</p>
 	</body>
 </html>

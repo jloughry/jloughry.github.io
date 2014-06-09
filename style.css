@@ -89,8 +89,30 @@ hr.footnote {
 	margin-top: -18px;
 }
 
-.syntax-block {
+.syntax-multiline-block {
 	padding-left: 22px;
 	text-indent: -22px;
 }
+
+.syntax-same-line-block {
+	display: inline;
+}
+
+.syntax-comment {
+	color: Lime;
+	padding-left: 50px;
+	display: inline;
+}
+
+.html-tag {
+}
+
+.html-tag:before {
+	content: "<";
+}
+
+.html-tag:after {
+	content: ">";
+}
+
 
