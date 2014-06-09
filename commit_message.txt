@@ -1,1 +1,1 @@
-eliminate common.mk file and copy its contents directly into Makfile
+update README
