@@ -1,1 +1,1 @@
-improve <div> CSS for in-line blocks.
+starting new favicon
