@@ -1,1 +1,1 @@
-display favicon inline in readme
+fix body indentation

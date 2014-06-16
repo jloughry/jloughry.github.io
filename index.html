@@ -34,130 +34,136 @@
 			<span class="headline-comment">;; blog</span>
 		</h1>
 
-<h2>DOM Experiments</h2>
-<p class="posting-date">9th June 2014</p>
+		<h2>DOM Experiments</h2>
+		<p class="posting-date">9th June 2014</p>
 
-<p>The two examples of syntax-highlighted code below were done using two different
-methods for implementing the indentation seen: the first uses repeated &amp;nbsp;
-entities (as many as needed), and the second was done with
-<span class="html-tag">div</span> blocks that implement hanging indents of the
-whole <em>s</em>-expression block automatically (as well as some special <code>inline</code>
-<span class="html-tag">div</span> tags that don&apos;t automatically put a newline after).</p>
+		<p>The two examples of syntax-highlighted code below were done using two
+		different methods for implementing the indentation seen: the first uses
+		repeated &amp;nbsp; entities (as many as needed), and the second was done
+		with <span class="html-tag">div</span> blocks that implement hanging
+		indents of the whole <em>s</em>-expression block automatically (as well
+		as some special <code>inline</code> <span class="html-tag">div</span>
+		tags that don&apos;t automatically put a newline after).</p>
 
-<h2>Added <a href="http://call-with-current-continuation.com/humans.txt">humans.txt</a> file.</h2>
-<p class="posting-date">23rd February 2014</p>
+		<h2>Added <a href="http://call-with-current-continuation.com/humans.txt"><!--
+			-->humans.txt</a> file.</h2>
+		<p class="posting-date">23rd February 2014</p>
 
-<p>See <a href="http://humanstxt.org/">Humans TXT: We Are People, Not Machines<a> for information.</p>
+		<p>See <a href="http://humanstxt.org/">Humans TXT: We Are People,
+			Not Machines</a> for information.</p>
 
-<h2>Testing Some Syntax Highlighting Code</h2>
-<p class="posting-date">1st Jan 2014</p>
+		<h2>Testing Some Syntax Highlighting Code</h2>
+		<p class="posting-date">1st Jan 2014</p>
 
-<p>I've been experimenting with CSS for syntax highlighting.</p>
+		<p>I've been experimenting with CSS for syntax highlighting.</p>
 
-<p>TO DO:</p>
+		<p>TO DO:</p>
 
-<ul>
-	<li>selector inheritance</li>
-	<li>line-height</li>
-	<li>more semantic mark-up</li>
-</ul>
+		<ul>
+			<li>selector inheritance</li>
+			<li>line-height</li>
+			<li>more semantic mark-up</li>
+		</ul>
 
-<p>The first code example uses lots of <span class="html-tag">span</span> but no special
-<span class="html-tag">div</span> tags:</p>
+		<p>The first code example uses lots of <span class="html-tag">span</span>
+		but no special <span class="html-tag">div</span> tags:</p>
 
-<div id="syntax-highlighting-test-1">
-	<div class="code">
-		<span class="punct">(</span><!--
-		--><span class="keyword">define</span>
-		<span class="identifier">length</span>
-		<br/>
-		&nbsp;&nbsp;<span class="punct">(</span><!--
-		--><span class="keyword">lambda</span>
-		<span class="punct">(</span><!--
-		--><span class="identifier">l</span><!--
-		--><span class="punct">)</span>
-		<br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;
-		<span class="punct">(</span><!--
-		--><span class="keyword">if</span>
-		<span class="punct">(</span><!--
-		--><span class="function">null?</span>
-		<span class="identifier">l</span><!--
-		--><span class="punct">)</span>
-		&nbsp;&nbsp;
-		<span class="comment">; this is a comment</span>
-		<br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<span class="constant">0</span>
-		<br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<span class="punct">(</span><!--
-		--><span class="function">+</span>
-		<span class="constant">1</span>
-		<span class="punct">(</span><!--
-		--><span class="function">length</span>
-		<span class="punct">(</span><!--
-		--><span class="function">cdr</span>
-		<span class="identifier">l</span><!--
-		--><span class="punct">))))))</span>
-	</div>
-</div>
+		<div id="syntax-highlighting-test-1">
+			<div class="code">
+				<span class="punct">(</span><!--
+				--><span class="keyword">define</span>
+				<span class="identifier">length</span>
+				<br/>
+				&nbsp;&nbsp;<span class="punct">(</span><!--
+				--><span class="keyword">lambda</span>
+				<span class="punct">(</span><!--
+				--><span class="identifier">l</span><!--
+				--><span class="punct">)</span>
+				<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="punct">(</span><!--
+				--><span class="keyword">if</span>
+				<span class="punct">(</span><!--
+				--><span class="function">null?</span>
+				<span class="identifier">l</span><!--
+				--><span class="punct">)</span>
+				&nbsp;&nbsp;
+				<span class="comment">; this is a comment</span>
+				<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="constant">0</span>
+				<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="punct">(</span><!--
+				--><span class="function">+</span>
+				<span class="constant">1</span>
+				<span class="punct">(</span><!--
+				--><span class="function">length</span>
+				<span class="punct">(</span><!--
+				--><span class="function">cdr</span>
+				<span class="identifier">l</span><!--
+				--><span class="punct">))))))</span>
+			</div>
+		</div>
 
-<p>The second example uses the auto-indent <span class="html-tag">div</span> method.
-Note that no <code>&amp;nbsp;</code> character entities are needed:</p>
+		<p>The second example uses the auto-indent <span class="html-tag">div</span>
+		method. Note that no <code>&amp;nbsp;</code> character entities are needed:</p>
 
-<div id="syntax-highlighting-test-2">
-	<div class="code">
-		<div class="syntax-multiline-block">
-			<span class="punct">(</span><span class="keyword">define</span>
-			<span class="identifier">length</span>
-			<div class="syntax-multiline-block">
-				<span class="punct">(</span><span class="keyword">lambda</span>
-				<span class="punct">(</span><span class="identifier">l</span><span
-					class="punct">)</span>
+		<div id="syntax-highlighting-test-2">
+			<div class="code">
 				<div class="syntax-multiline-block">
-					<span class="punct">(</span><span class="keyword">if</span>
-					<span class="punct">(</span><span class="function">null?</span>
-					<span class="identifier">l</span><span class="punct">)</span>
-					<div class="syntax-comment">; this is a comment</div>
-					<br/>
-					<span class="constant">0</span>
-					</br>
-					<div class="syntax-same-line-block">
-						<span class="punct">(</span><span class="function">+</span>
-						<span class="constant">1</span>
-						<div class="syntax-same-line-block">
-							<span class="punct">(</span><span class="function">length</span>
+					<span class="punct">(</span><span class="keyword">define</span>
+					<span class="identifier">length</span>
+					<div class="syntax-multiline-block">
+						<span class="punct">(</span><span class="keyword">lambda</span>
+						<span class="punct">(</span><span class="identifier">l</span><span
+							class="punct">)</span>
+						<div class="syntax-multiline-block">
+							<span class="punct">(</span><span class="keyword">if</span>
+							<span class="punct">(</span><span class="function">null?</span>
+							<span class="identifier">l</span><span class="punct">)</span>
+							<div class="syntax-comment">; this is a comment</div>
+							<br/>
+							<span class="constant">0</span>
+							</br>
 							<div class="syntax-same-line-block">
-								<span class="punct">(</span><span class="function">cdr</span>
-								<span class="identifier">l</span><span class="punct">))))))</span>
+								<span class="punct">(</span><span class="function">+</span>
+								<span class="constant">1</span>
+								<div class="syntax-same-line-block">
+									<span class="punct">(</span><span class="function">length</span>
+									<div class="syntax-same-line-block">
+										<span class="punct">(</span><span
+											class="function">cdr</span>
+										<span class="identifier">l</span><span
+											class="punct">))))))</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-<div>
+		<div>
 
-<p>It&apos;s a little disappointing that closing parentheses cannot be put inside the
-<span class="html-tag">div</span> blocks if we want to stack all the parens at the end,
-but if stacking the closing parens is not desired, then putting the closing paren
-<em>after</em> the closing <span class="html-tag">/div</span> keeps the indentation
-levels of the closing parens where they ought to be (<em>i.e.</em>, don&apos;t put
-closing parens inside the closing <span class="html-tag">/div</span>.)
+		<p>It&apos;s a little disappointing that closing parentheses cannot be
+		put inside the <span class="html-tag">div</span> blocks if we want to
+		stack all the parens at the end, but if stacking the closing parens is
+		not desired, then putting the closing paren <em>after</em> the closing
+		<span class="html-tag">/div</span> keeps the indentation levels of the
+		closing parens where they ought to be (<em>i.e.</em>, don&apos;t put
+		closing parens inside the closing <span class="html-tag">/div</span>.)
 
-</p>
+		</p>
 
-<h2>About this blog</h2>
+		<h2>About this blog</h2>
 
-		<!-- the following is a useful method for wrapping long lines -->
+		<!-- This trick using HTML comments is a useful method for wrapping long lines. -->
 
 		Email me here:
 		<a href="mailto:joe@call-with-current-continuation.com"><!--
 		-->joe@call-with-current-continuation.com</a>
 
 		<hr class="footnote">
-		<p class="footnote"><!-- BUILD NUMBER -->Build 54</p>
+		<p class="footnote"><!-- BUILD NUMBER -->Build 55</p>
 	</body>
 </html>
