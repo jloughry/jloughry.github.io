@@ -1,1 +1,1 @@
-self-closing tags not allowed in HTML4
+testing DOCTYPE HTML (for HTML5)
