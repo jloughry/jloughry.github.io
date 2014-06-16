@@ -1,1 +1,1 @@
-testing DOCTYPE HTML (for HTML5)
+testing &apos; with HTML5 DOCTYPE to see if it visually distinguishes
