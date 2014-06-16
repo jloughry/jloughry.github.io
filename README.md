@@ -11,12 +11,45 @@ only; there are no exploitable interfaces for an attacker to try.
 Scheme source code is notional only at this point, being prototype data for the CSS
 implementation of syntax highlighting that I plan to do next.
 
+favicon
+-------
+
 The favicon is composed of a lowercase italic (sometimes bold italic) Palatino Linotype
 letter *"f"* in 24 points between a pair of un-italicised parentheses; the character spacing
 of all three characters is extended by 4 or 5 points. The intent is for the outer rim of
 the parentheses to match as nearly as possible a perfect circle, and for the serifs on the
 'f' to match the angle of the horns of the parentheses so it flows together like a &#9775;
 symbol.
+
+When I updated the site's icon to incorporate a gradient, I 
+
+I followed the advice of [this site](http://realfavicongenerator.net/favicon_checker)
+when writing the HTML metadata in `index.html`; specifically, I dropped the following
+line entirely:
+
+````
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+````
+The reason is because, in Firefox 30.0, the icon shown on the shortcuts bar displayed
+incorrectly with a light blue background (hex `abcdef`) if the line was in there, and
+properly with a transparent background without that line in the metadata. The site gets
+a clean report from [favicon checker](http://realfavicongenerator.net/favicon_checker).
+
+The background colour of the non-transparent version of the design is 0xabcdef, a nice
+inoffensive light blue. That site requires source images to be PNG format and square;
+the easiest way to crop a figure in Inkscape is to draw a rectangle over the figure the
+size you want, leave the rectangle (or square, in this case) selected, and go into File,
+Document Properties. Choose the 'Page' tab, and in the 'Custom Size' section, click
+'Resize page to content...' and click the 'Resize page to drawing or selection' button.
+
+Inkscape draws with a transparent background by default; this can be verified by File,
+Document Properties, General, and clicking on the 'Background' near the top of the
+dialogue box. If the alpha ('A') value is zero, then the background is transparent and
+it will export that way to PNG. Export the 'page' instead of the 'drawing' to PNG if
+you re-sized to a square using the previous method. I had to draw versions of the icon
+with a white background (for iOS) and with a transparent background (for Windows 8) and
+for the PNG files and `favicon.ico` file used by older browsers; the web site that
+generated all the different sizes and wrote the HTML metadata for me did a great job.
 
 Symlink errors in GitHub Pages<a name="symlink-problem"/>
 ------------------------------
