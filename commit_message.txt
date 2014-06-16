@@ -1,1 +1,1 @@
-syntax highlighting caught an HTML syntax error
+found a paragraph not enclosed in <p> tags
