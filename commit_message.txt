@@ -1,1 +1,1 @@
-found a paragraph not enclosed in <p> tags
+one closing </div> was written without the slash[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dincorrectly without the slash; remove &apos; as not supported in HTML4
