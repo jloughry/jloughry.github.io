@@ -1,1 +1,1 @@
-update readme
+display favicon inline in readme

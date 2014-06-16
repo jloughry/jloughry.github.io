@@ -21,11 +21,11 @@ the parentheses to match as nearly as possible a perfect circle, and for the ser
 'f' to match the angle of the horns of the parentheses so it flows together like a &#9775;
 symbol.
 
-When I updated the site's icon to incorporate a gradient, I 
-
-I followed the advice of [this site](http://realfavicongenerator.net/favicon_checker)
-when writing the HTML metadata in `index.html`; specifically, I dropped the following
-line entirely:
+When I updated the site's icon to incorporate a gradient like this
+<img src="https://github.com/jloughry/jloughry.github.io/raw/master/favicon-16x16.png"
+alt="the site's favicon"/>, I followed the advice of
+[this site](http://realfavicongenerator.net/favicon_checker) when writing the HTML
+metadata in `index.html`; specifically, I dropped the following line entirely:
 
 ````
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
