@@ -1,1 +1,1 @@
-improved monochrome icons
+change background colour of Windows 8 tile to CSS Dark Blue (0x00008b)
