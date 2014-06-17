@@ -1,1 +1,1 @@
-rm favicons.zip
+improved monochrome icons
