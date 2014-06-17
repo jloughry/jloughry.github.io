@@ -1,1 +1,1 @@
-colorised favicon (made by http://realfavicongenerator.net/)[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dthe tool at http://realfavicongenerator.net/)
+rm favicons.zip
