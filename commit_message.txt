@@ -1,1 +1,1 @@
-change background colour of Windows 8 tile to CSS Dark Blue (0x00008b)
+change opacity of favicon gradient to 50 percent
