@@ -1,1 +1,1 @@
-change opacity of favicon gradient to 50 percent
+Make the fn in the icon red; adjust gradients slightly.
