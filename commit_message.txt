@@ -1,1 +1,1 @@
-Make the fn in the icon red; adjust gradients slightly.
+make the $f$ bolder
