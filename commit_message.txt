@@ -1,3 +1,1 @@
-the shadow on the $f$ was reversed; the "lighting" didn't agree with the background gradient
-I still can't get the saturated Windows 8 icon to show a gradient in the parentheses the way it
-does in the background, but it looks good as it is.
+fix screwed up Windows 8 icons
