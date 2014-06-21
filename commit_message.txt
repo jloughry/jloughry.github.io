@@ -1,1 +1,1 @@
-fix screwed up Windows 8 icons
+trying to get Microsoft Windows 8 tile to show up at all
