@@ -1,1 +1,1 @@
-reverting to a newly designed *unified* icon source
+improve spacing in page header; with CSS now, don't use the thin spaces
