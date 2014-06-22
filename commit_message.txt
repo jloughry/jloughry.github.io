@@ -1,1 +1,1 @@
-trying to get Microsoft Windows 8 tile to show up at all
+reverting to a newly designed *unified* icon source
