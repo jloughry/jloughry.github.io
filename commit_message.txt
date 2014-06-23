@@ -1,1 +1,1 @@
-improve spacing in page header; with CSS now, don't use the thin spaces
+testing Windows 8 features in metadata
