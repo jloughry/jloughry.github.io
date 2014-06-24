@@ -1,1 +1,1 @@
-testing Windows 8 features in metadata
+add link rel to ico file
