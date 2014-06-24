@@ -1,1 +1,1 @@
-add link rel to ico file
+Windows 8 shows the text specified in <meta> tag and the correct tile when pinned
