@@ -1,1 +1,1 @@
-Windows 8 shows the text specified in <meta> tag and the correct tile when pinned
+update README with technical tips for Windows 8

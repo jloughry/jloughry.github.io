@@ -51,6 +51,18 @@ with a white background (for iOS) and with a transparent background (for Windows
 for the PNG files and `favicon.ico` file used by older browsers; the web site that
 generated all the different sizes and wrote the HTML metadata for me did a great job.
 
+The best icon generator, at present, is [Real Favicon Generator](http://realfavicongenerator.net).
+
+To set the caption of a Microsoft Windows 8 tile, add this code to the `<head>`
+section of the HTML:
+
+````
+<meta name="application-name" content="(call/cc latest)  ;; blog"/>
+````
+When the user 'pins' this web page to the Windows 8 Start Page (from 'Favourites' in
+the IE 11 'Metro' browser), the caption will default to that text, although the user
+can type over and change it.
+
 Symlink errors in GitHub Pages<a name="symlink-problem"/>
 ------------------------------
 
