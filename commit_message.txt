@@ -1,1 +1,3 @@
-update README with technical tips for Windows 8
+experimenting with sed expressions to insert HTML into Scheme source code: it worked, partially,
+but regexes aren't powerful enough; it'll take a parser to do it right because the same named symbol
+might be an identifier or a function at different times.

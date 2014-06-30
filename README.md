@@ -111,3 +111,9 @@ having to employ lots of repeated &amp;nbsp; entities.
 
 Look at the DOM now.
 
+HTML autogeneration from Scheme code experiments
+------------------------------------------------
+
+The script `markup_scheme_to_html.sh` crudely brackets regexes with HTML tags but
+it'll take a parser that understands the language to do it completely hands-off.
+

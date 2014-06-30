@@ -1,0 +1,5 @@
+<span class="punct">(</span><span class="keyword">define</span> <span class="identifier">length</span>
+	<span class="punct">(</span><span class="keyword">lambda</span> <span class="punct">(</span>l<span class="punct">)</span>
+		<span class="punct">(</span><span class="keyword">if</span> <span class="punct">(</span><span class="function">null?</span> l<span class="punct">)</span>	<div class="syntax-comment">; this is a comment</div>
+			<span class="constant">0</span>
+			<span class="punct">(</span><span class="function">+</span> <span class="constant">1</span> <span class="punct">(</span><span class="identifier">length</span> <span class="punct">(</span><span class="function">cdr</span> l<span class="punct">))))))</span>
