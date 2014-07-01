@@ -1,1 +1,1 @@
-add placeholder for third (auto-generated) example of syntax highlighting
+make the third example a <div class="code">
