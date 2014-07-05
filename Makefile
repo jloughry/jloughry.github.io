@@ -44,7 +44,11 @@ spell::
 
 github_repository_level = /cygdrive/c/Documents\ and\ Settings/rjl/My\ Documents/thesis/github
 
-# Version: 21st January 2014.
+#
+# This Makefile does not include common.mk but instead incorporates much
+# of its content. The reason is because the CI tool used by GitHub pages
+# to build web sites doesn't play well with symlinks; fix it later.
+#
 
 bibtex_file = consolidated_bibtex_file.bib
 bibtex_source = $(github_repository_level)/bibtex/consolidated_bibtex_source.bib

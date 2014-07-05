@@ -111,9 +111,24 @@ having to employ lots of repeated &amp;nbsp; entities.
 
 Look at the DOM now.
 
-HTML autogeneration from Scheme code experiments
+HTML auto-generation from Scheme code experiments
 ------------------------------------------------
 
 The script `markup_scheme_to_html.sh` crudely brackets regexes with HTML tags but
 it'll take a parser that understands the language to do it completely hands-off.
+
+Update 20140705.1214: the
+[parser](https://github.com/jloughry/experiments/tree/master/C_kata/scheme_syntax_highlighter)
+is coming along. Recently it auto-generated almost all the CSS for a syntax-highlighted
+version of
+
+````
+(define length
+	(lambda (l)
+		(if (null? l)	; this is a comment
+			0
+			(+ 1 (length (cdr l))))))
+````
+with only some spacing issues (and the tricky problem of collapsed parentheses at
+the end) remaining.
 
