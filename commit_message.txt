@@ -1,1 +1,1 @@
-need to fix private.mk
+put travis-ci build status on first line of readme

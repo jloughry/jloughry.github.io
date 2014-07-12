@@ -1,5 +1,4 @@
-Joe Loughry (joe.loughry@stx.ox.ac.uk)
-===========
+# Blog [![Build Status](https://travis-ci.org/jloughry/jloughry.github.io.svg)](https://travis-ci.org/jloughry/jloughry.github.io)
 
 call-with-current-continuation.com
 ----------------------------------
