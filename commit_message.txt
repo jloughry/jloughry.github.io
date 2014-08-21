@@ -1,1 +1,1 @@
-heading for new PGP key
+add key fingerprint
