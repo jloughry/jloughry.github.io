@@ -1,1 +1,1 @@
-add key fingerprint
+link to full key from fingerprint
