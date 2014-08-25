@@ -1,1 +1,1 @@
-link to full key from fingerprint
+new PGP key with current email addresses
