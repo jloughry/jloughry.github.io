@@ -1,1 +1,1 @@
-new PGP key with current email addresses
+rename public key file to .txt so it displays directly in the browser
