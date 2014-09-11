@@ -1,1 +1,1 @@
-add build status SVG to page (for testing Content-Security-Policy header)
+update readme for CSP

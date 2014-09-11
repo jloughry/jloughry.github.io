@@ -131,3 +131,19 @@ version of
 with only some spacing issues (and the tricky problem of collapsed parentheses at
 the end) remaining.
 
+CSP
+---
+
+I'd like to specify the following [Content Security
+Policy](http://en.wikipedia.org/wiki/Content_Security_Policy) on my web site:
+
+````
+Content-Security-Policy: default-src 'self'
+````
+But at present [GitHub Pages doesn't support adding custom HTTP
+headers](http://stackoverflow.com/questions/14798589/github-pages-http-headers).
+
+I added the [Travis CI](https://travis-ci.org/jloughry/jloughry.github.io) build
+indicator at the top of the `index.html` page to have something to test CSP reports
+on.
+
