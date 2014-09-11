@@ -142,6 +142,7 @@ Content-Security-Policy: default-src 'self'
 ````
 But at present [GitHub Pages doesn't support adding custom HTTP
 headers](http://stackoverflow.com/questions/14798589/github-pages-http-headers).
+It's in the wish list.
 
 I added the [Travis CI](https://travis-ci.org/jloughry/jloughry.github.io) build
 indicator at the top of the `index.html` page to have something to test CSP reports
