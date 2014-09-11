@@ -1,1 +1,1 @@
-rename public key file to .txt so it displays directly in the browser
+add build status SVG to page (for testing Content-Security-Policy header)
