@@ -3,6 +3,19 @@ body {
 	background-color: white;
 }
 
+h1 { /* This becomes the web page header. */
+	margin-top: -25px;
+	padding-top: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: -8px;
+	margin-right: -8px;
+	line-height: 250%;
+	background-color: DarkBlue;
+	color: white;
+	font-weight: normal;
+}
+
 .punct {
 	color: yellow;
 	font-weight: bold;
@@ -71,14 +84,6 @@ headline-keyword {
 	font-size: 60%;
 }
 
-h1 {
-	margin-top: -25px;
-	line-height: 250%;
-	background-color: DarkBlue;
-	color: white;
-	font-weight: normal;
-}
-
 hr.footnote {
 	margin-top: 30px;
 }
@@ -114,5 +119,4 @@ hr.footnote {
 .html-tag:after {
 	content: ">";
 }
-
 
