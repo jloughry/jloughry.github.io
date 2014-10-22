@@ -1,0 +1,23 @@
+SSD (Solid State Disk) forensics, to be effective on existing and current technology, necessitate
+hardware intervention.  For compatibility with older disk interface standards, SSDs employ a Flash
+Translation Layer (FTL) to map Logical Block Addresses (LBA), used by operating systems to specify
+locations in storage, to corresponding locations in flash memory chips.  The FTL handles all the
+complexity of wear leveling and storage allocation across flash memory chips, which for reasons of
+efficiency use a relatively large block size internally, have bits that can be set individually but
+only erased an entire block---about a megabyte---at a time, and in the newer Multi-Level Cell (MLC)
+chips, share transistors between blocks such that setting bits in one block causes predictable
+corruption in an associated block, further complicating the FTL's bookkeeping.  The FTL presents a
+simple LBA interface to the outside world, but runs a complicated shell game beneath the surface.
+In contrast, the electrical interfaces to the flash memory chips of an SSD are straightforward and
+clear.  Bypassing the FTL entirely, a forensic investigator with the right technical capability
+talks to the flash memory chips directly, thereby gaining access to all storage for examination, not
+just 'user-accessible' storage inside the device.  At present, this necessitates unsoldering the
+flash memory chips and physical destruction of the SSD, although without loss of information.  The
+required level of technical expertise extends only as far as unsoldering and resoldering
+surface-mount packages to a test board, nowhere near the degree of difficulty involved in, for
+example, decapsulating smart card chips with fuming nitric acid and probing them under a microscope.
+Improved designs for sanization-friendly and forensic-friendly SSDs may incorporate such features as
+tri-state buffers for in-circuit probing without the necessity of unsoldering chips, a verifiable
+secure erase capability, Trusted Platform Module (TPM) for secure storage of cryptographic keys used
+for Full Disk Encryption (FDE) with concommitant rapid cryptographic sanitization, and a discrete
+for emergency sanitization.

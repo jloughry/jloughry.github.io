@@ -1,2 +1,1 @@
-improve spacing of header; eliminate blank white spaces on end;
-improve organisation of CSS code.
+move papers from applied-math.org to here.
