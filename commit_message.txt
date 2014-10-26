@@ -1,1 +1,1 @@
-host my papers on this web site
+update .gitignore file
