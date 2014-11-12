@@ -1,1 +1,1 @@
-update .gitignore file
+OK, maybe it is a real blog
