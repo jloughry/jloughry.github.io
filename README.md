@@ -121,7 +121,7 @@ Update 20140705.1214: the
 is coming along. Recently it auto-generated almost all the CSS for a syntax-highlighted
 version of
 
-````
+````scheme
 (define length
 	(lambda (l)
 		(if (null? l)	; this is a comment
@@ -137,7 +137,7 @@ CSP
 I'd like to specify the following [Content Security
 Policy](http://en.wikipedia.org/wiki/Content_Security_Policy) on my web site:
 
-````
+````http
 Content-Security-Policy: default-src 'self'
 ````
 But at present [GitHub Pages doesn't support adding custom HTTP

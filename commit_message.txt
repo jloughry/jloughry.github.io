@@ -1,1 +1,1 @@
-update blog
+add syntax highling identifiers
