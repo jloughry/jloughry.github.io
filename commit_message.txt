@@ -1,1 +1,1 @@
-add syntax highling identifiers
+obfuscate displayed email address
