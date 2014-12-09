@@ -23,17 +23,20 @@
 		<meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
 		<meta name="msapplication-config"
 			content="http://call-with-current-continuation.com/browserconfig.xml"/>
-		<meta name="application-name" content="(call/cc whatever)  ;; blog"/>
+		<meta name="application-name" content="(call/cc latest)  ;; blog"/>
 		<link rel="stylesheet" href="style.css">
 		<link type="text/plain" rel="author"
 			href="http://www.call-with-current-continuation.com/humans.txt">
-		<title>(call/cc whatever)</title>
+		<title>(call/cc latest)</title>
+        <script>
+            var blog_title = "the-very-latest";
+        </script>
 	</head>
 	<body>
 		<h1>
 			<span class="punct">(</span><!--
 			--><span class="headline-keyword">call-with-current-continuation</span>
-			<span class="headline-function">whatever</span><!--
+			<span class="headline-function"><script>document.write(blog_title)</script></span><!--
 			--><span class="punct">)</span>
 			<span class="headline-comment">;; blog</span>
 		</h1>
@@ -223,6 +226,6 @@ href="https://github.com/jloughry/CV/blob/master/Joe.Loughry_information_securit
 		-->joe AT call-with-current-continuation.com</a></p>
 
 		<hr class="footnote">
-		<p class="footnote"><!-- BUILD NUMBER -->Build 81</p>
+		<p class="footnote"><!-- BUILD NUMBER -->Build 82</p>
 	</body>
 </html>

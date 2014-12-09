@@ -1,1 +1,1 @@
-obfuscate displayed email address
+testing variable replacement
