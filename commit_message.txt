@@ -1,1 +1,1 @@
-do not use js to change meta tags; most search engines don't run javascript
+display build counter in Makefile

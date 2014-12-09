@@ -65,6 +65,7 @@ fix_bad_commits = fix_bad_commits.sh
 		notes quotes cv symlink-to-bibtex-file commit-bibtex
 
 all:: symlink-to-bibtex-file
+	@echo "Build `cat $(build_counter)`"
 	@echo "This is \"all\" in the common.mk file."
 
 clean::
