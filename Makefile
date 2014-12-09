@@ -1,6 +1,6 @@
 target = $(html_file)
 
-html_file = index.html
+html_file = blog.html
 css_file = style.css
 scheme_file = index.scm
 unicode_test = unicode_font_test_page.html

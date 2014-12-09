@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="keywords" content="Scheme language, blog"/>
+		<meta name="author" content="Joe Loughry"/>
+		<meta name="description" content="Blogging about mostly Scheme-related topics"/>
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+		<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" href="/favicon.ico"/>
+		<meta name="msapplication-TileColor" content="#663399"/>
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
+		<meta name="msapplication-config"
+			content="http://call-with-current-continuation.com/browserconfig.xml"/>
+		<meta name="application-name" content="(call/cc latest)  ;; blog"/>
+		<link rel="stylesheet" href="style.css">
+		<link type="text/plain" rel="author"
+			href="http://www.call-with-current-continuation.com/humans.txt">
+		<title>(call/cc latest)</title>
+        <script>
+            var blog_title = "very-latest";
+        </script>
+	</head>
+	<body>
+		<h1>
+			<span class="punct">(</span><!--
+			--><span class="headline-keyword">call-with-current-continuation</span>
+			<span class="headline-function"><script>document.write(blog_title)</script></span><!--
+			--><span class="punct">)</span>
+			<span class="headline-comment">;; blog</span>
+		</h1>
+
+	<a href="https://travis-ci.org/jloughry/jloughry.github.io"><img
+		src="https://travis-ci.org/jloughry/jloughry.github.io.svg"
+		alt="build status"/></a>
+
+		<h2>Store-and-Forward TCP/IP</h2>
+		<p class="posting-date">11th November 2014</p>
+
+		<p>I have intermittent network connectivity. What I wish for
+		sometimes is a virtual TCP/IP that would fool network applications
+		into working well enough, without hanging, until real network
+		service returned, at which point it would silently catch up. Web
+		pages would not load, obviously, but I could enter new Google
+		calendar events, send emails, and commit changes to GitHub without
+		having to wait and remember to do it later. As it is, I write notes
+		to myself. I think the network stack could do something similar.</p>
+
+		<p>Clearly, new apps can be written to have the same behaviour, but
+		this would enable old apps, without rewriting, to have the new
+		features.</p>
+
+		<h2>Papers hosted here</h2>
+		<p class="posting-date">22nd October 2014</p>
+
+<!-- 6789012345678901234567890123456789012345678901234567890123456789012345 -->
+<!--     1         2         3         4         5         6         7      -->
+
+		<p>Copies of my published papers are hosted on this web site (you
+		can find links to them on my <a
+href="https://github.com/jloughry/CV/blob/master/Joe.Loughry_information_security.pdf?raw=true"><!--
+		-->résumé</a>) or on the respective copyright holders' site.
+		Where no freely available version is available (maybe it's behind a
+		paywall), <a href="mailto:joe@call-with-current-continuation.com">email
+        me</a> and I'll send you a copy.</p>
+
+		<h2>New PGP Key</h2>
+		<p class="posting-date">20th August 2014</p>
+
+		<p>Key fingerprint:
+			<a href="Joe.Loughry.txt"><!--
+				--><code>2C3B 11A1 CE7C 5B1F 87BC  F5D0 299D 7116 EDC2 ABE5</code></a></p>
+
+		<h2>DOM Experiments</h2>
+		<p class="posting-date">9th June 2014</p>
+
+		<p>The two examples of syntax-highlighted code below were done using two
+		different methods for implementing the indentation seen: the first uses
+		repeated &amp;nbsp; entities (as many as needed), and the second was done
+		with <span class="html-tag">div</span> blocks that implement hanging
+		indents of the whole <em>s</em>-expression block automatically (as well
+		as some special <code>inline</code> <span class="html-tag">div</span>
+		tags that don't automatically put a newline after).</p>
+
+		<h2>Added <a href="http://call-with-current-continuation.com/humans.txt"><!--
+			-->humans.txt</a> file.</h2>
+		<p class="posting-date">23rd February 2014</p>
+
+		<p>See <a href="http://humanstxt.org/">Humans TXT: We Are People,
+			Not Machines</a> for information.</p>
+
+		<h2>Testing Some Syntax Highlighting Code</h2>
+		<p class="posting-date">1st Jan 2014</p>
+
+		<p>I've been experimenting with CSS for syntax highlighting.</p>
+
+		<p>TO DO:</p>
+
+		<ul>
+			<li>selector inheritance</li>
+			<li>line-height</li>
+			<li>more semantic mark-up</li>
+		</ul>
+
+		<p>The first code example uses lots of <span class="html-tag">span</span>
+		but no special <span class="html-tag">div</span> tags:</p>
+
+		<div id="syntax-highlighting-test-1">
+			<div class="code">
+				<span class="punct">(</span><!--
+				--><span class="keyword">define</span>
+				<span class="identifier">length</span>
+				<br/>
+				&nbsp;&nbsp;<span class="punct">(</span><!--
+				--><span class="keyword">lambda</span>
+				<span class="punct">(</span><!--
+				--><span class="identifier">l</span><!--
+				--><span class="punct">)</span>
+				<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="punct">(</span><!--
+				--><span class="keyword">if</span>
+				<span class="punct">(</span><!--
+				--><span class="function">null?</span>
+				<span class="identifier">l</span><!--
+				--><span class="punct">)</span>
+				&nbsp;&nbsp;
+				<span class="comment">; this is a comment</span>
+				<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="constant">0</span>
+				<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="punct">(</span><!--
+				--><span class="function">+</span>
+				<span class="constant">1</span>
+				<span class="punct">(</span><!--
+				--><span class="function">length</span>
+				<span class="punct">(</span><!--
+				--><span class="function">cdr</span>
+				<span class="identifier">l</span><!--
+				--><span class="punct">))))))</span>
+			</div>
+		</div>
+
+		<p>The second example uses the auto-indent <span class="html-tag">div</span>
+		method. Note that no <code>&amp;nbsp;</code> character entities are needed
+		in the source:</p>
+
+		<div id="syntax-highlighting-test-2">
+			<div class="code">
+				<div class="syntax-multiline-block">
+					<span class="punct">(</span><span class="keyword">define</span>
+					<span class="identifier">length</span>
+					<div class="syntax-multiline-block">
+						<span class="punct">(</span><span class="keyword">lambda</span>
+						<span class="punct">(</span><span class="identifier">l</span><span
+							class="punct">)</span>
+						<div class="syntax-multiline-block">
+							<span class="punct">(</span><span class="keyword">if</span>
+							<span class="punct">(</span><span class="function">null?</span>
+							<span class="identifier">l</span><span class="punct">)</span>
+							<div class="syntax-comment">; this is a comment</div>
+							<br/>
+							<span class="constant">0</span>
+							<br/>
+							<div class="syntax-same-line-block">
+								<span class="punct">(</span><span class="function">+</span>
+								<span class="constant">1</span>
+								<div class="syntax-same-line-block">
+									<span class="punct">(</span><span class="function">length</span>
+									<div class="syntax-same-line-block">
+										<span class="punct">(</span><span
+											class="function">cdr</span>
+										<span class="identifier">l</span><span
+											class="punct">))))))</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<p>It's a little disappointing that closing parentheses cannot be put
+		inside the <span class="html-tag">div</span> blocks if we want to stack
+		all the parens at the end, but if stacking the closing parens is not
+		desired, then putting the closing paren <em>after</em> the closing <span
+		class="html-tag">/div</span> keeps the indentation levels of the closing
+		parens where they ought to be (<em>i.e.</em>, don't put closing parens
+		inside the closing <span class="html-tag">/div</span>.)</p>
+
+		<p>The third example was auto-generated by a syntax-highlighting parser:</p>
+
+		<div id="syntax-highlighting-test-3">
+			<div class="code">
+				<div class="syntax-comment">; coming soon</div>
+			</div>
+		</div>
+
+		<p>(Note that a tab is automatically inserted before in-line comments;
+		I may have to fix that.)</p>
+
+		<h2>About this blog</h2>
+
+		<p>This isn't a real blog; it's a place for me to experiment with techniques
+		I might want to use somewhere else.</p>
+
+		<!-- This trick using comments is useful for wrapping long lines. -->
+
+		<p>Email me here:
+		<a href="mailto:joe@call-with-current-continuation.com"><!--
+		-->joe AT call-with-current-continuation.com</a></p>
+
+		<hr class="footnote">
+		<p class="footnote"><!-- BUILD NUMBER -->Build 85</p>
+	</body>
+</html>

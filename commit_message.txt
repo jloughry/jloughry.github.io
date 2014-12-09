@@ -1,1 +1,1 @@
-display build counter in Makefile
+fix HTML validation errors and make index.html a symlink
