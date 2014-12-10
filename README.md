@@ -151,8 +151,8 @@ on.
 CSS and HTML5 Validation
 ------------------------
 
-The CSS [is
-valid](http://jigsaw.w3.org/css-validator/validator?uri=http://call-with-current-continuation.com/)
+The CSS is
+[valid](http://jigsaw.w3.org/css-validator/validator?uri=http://call-with-current-continuation.com/)
 CSS Level 3 and the HTML
 [validates](http://validator.w3.org/check?uri=http://call-with-current-continuation.com/)
 to HTML5 according to the [W3C Markup Validation

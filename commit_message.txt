@@ -1,1 +1,1 @@
-improve validation by making HTML more correct
+Banker's sequence
