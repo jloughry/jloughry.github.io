@@ -1,1 +1,1 @@
-Banker's sequence
+show the first, second, and third order Banker's sequences
