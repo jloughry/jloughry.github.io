@@ -1,1 +1,1 @@
-it is not known whether any optimal solutions exist for orders > 4
+add a link to the subset paper
