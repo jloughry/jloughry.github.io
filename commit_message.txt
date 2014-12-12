@@ -1,1 +1,1 @@
-showing a better way to break a long string in HTML
+fix overly long lines
