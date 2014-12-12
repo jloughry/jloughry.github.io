@@ -1,1 +1,1 @@
-show the first, second, and third order Banker's sequences
+it is not known whether any optimal solutions exist for orders > 4
