@@ -1,1 +1,2 @@
-fix overly long lines
+make tables consistent
+improve spacing

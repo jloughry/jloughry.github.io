@@ -47,55 +47,67 @@
             alt="build status"/></a>
 
         <h2>An optimal Banker's sequence of order 4</h2>
-        <p class="posting-date">9th December 2014; updated 11th December
-        2014</p>
+        <p class="posting-date">9th December 2014; updated 11th and 14th
+        December 2014</p>
 
         <p><a
         href="https://github.com/jloughry/jloughry.github.io/blob/master/
 papers/subset.pdf?raw=true">Optimal sequences</a> for orders 1, 2, and 3
         are easy to generate and not always unique; the optimal first order
-        Banker's sequence is, of course, uniquely: <code>(0, 1)</code>.</p>
-
-        <p>The optimal second order Banker's sequence is not unique;
-        expressed in binary, it can be either of:</p>
+        Banker's sequence, expressed in binary and starting from zero, is,
+        of course, uniquely:</p>
 
         <table>
-            <tr><th>Weight</th><th align="center" colspan="2">Bits</th></tr>
-            <tr><td align="center">(0)</td>
+            <tr><th>Weight</th><th>&nbsp;</th><th align="center">Possible
+                Bit Vectors</th></tr>
+            <tr><td align="center">(0)</td><td>&nbsp;</td><td
+                align="center">0</td></tr>
+            <tr><td align="center">(1)</td><td>&nbsp;</td><td
+                align="center">1</td></tr>
+        </table>
+
+        <p>The optimal second order Banker's sequence is not unique; it can
+        be either of:</p>
+
+        <table>
+            <tr><th>Weight</th><th>&nbsp;</th><th align="center" colspan="2">Possible Bit
+                Vectors</th></tr>
+            <tr><td align="center">(0)</td><td>&nbsp;</td>
                 <td align="center">00</td><td>00</td></tr>
-            <tr><td align="center">(1)</td>
+            <tr><td align="center">(1)</td><td>&nbsp;</td>
                 <td align="center">01</td><td>10</td></tr>
-            <tr><td align="center">(2)</td>
+            <tr><td align="center">(2)</td><td>&nbsp;</td>
                 <td align="center">11</td><td>11</td></tr>
-            <tr><td align="center">(1)</td>
+            <tr><td align="center">(1)</td><td>&nbsp;</td>
                 <td align="center">10</td><td>10</td></tr>
         </table>
 
-        <p>A third order Banker's sequence admits even more solutions;
-        expressed in binary, here are some of them:</p>
+        <p>A third order Banker's sequence admits even more solutions; here
+        are some (but possibly not all) of them:</p>
 
         <table>
-            <tr><th>Weight</th><th align="center" colspan="5">Bits</th></tr>
-            <tr><td align="center">(0)</td>
+            <tr><th>Weight</th><th>&nbsp;</th><th align="center"
+                colspan="5">Possible Bit Vectors</th></tr>
+            <tr><td align="center">(0)</td><td>&nbsp;</td>
                 <td>000</td><td>000</td><td>000</td><td>000</td><td>000</td></tr>
-            <tr><td align="center">(1)</td>
+            <tr><td align="center">(1)</td><td>&nbsp;</td>
                 <td>001</td><td>100</td><td>010</td><td>001</td><td>100</td></tr>
-            <tr><td align="center">(2)</td>
+            <tr><td align="center">(2)</td><td>&nbsp;</td>
                 <td>011</td><td>110</td><td>011</td><td>101</td><td>101</td></tr>
-            <tr><td align="center">(1)</td>
+            <tr><td align="center">(1)</td><td>&nbsp;</td>
                 <td>010</td><td>010</td><td>001</td><td>100</td><td>001</td></tr>
-            <tr><td align="center">(2)</td>
+            <tr><td align="center">(2)</td><td>&nbsp;</td>
                 <td>110</td><td>011</td><td>101</td><td>110</td><td>011</td></tr>
-            <tr><td align="center">(1)</td>
+            <tr><td align="center">(1)</td><td>&nbsp;</td>
                 <td>100</td><td>001</td><td>100</td><td>010</td><td>010</td></tr>
-            <tr><td align="center">(2)</td>
+            <tr><td align="center">(2)</td><td>&nbsp;</td>
                 <td>101</td><td>101</td><td>110</td><td>011</td><td>110</td></tr>
-            <tr><td align="center">(3)</td>
+            <tr><td align="center">(3)</td><td>&nbsp;</td>
                 <td>111</td><td>111</td><td>111</td><td>111</td><td>111</td></tr>
         </table>
 
-        <p>The fourth order Banker's sequence, surprisingly, is tricker;
-        this is the only known solution:</p>
+        <p>The fourth order Banker's sequence, surprisingly, is much
+        trickier; this is the only known solution, so far:</p>
 
         <!-- There has got to be a better way to do this with CSS. -->
 
@@ -117,7 +129,8 @@ papers/subset.pdf?raw=true">Optimal sequences</a> for orders 1, 2, and 3
         </table>
 
         <p>It is not known whether this solution is unique, or if any
-        optimal solutions exist for orders &gt; 4.</p>
+        optimal solutions exist for orders &gt; 4. Development is under way
+        of a programme to search for general solutions in any <i>n</i>.</p>
 
 		<h2>Store-and-Forward TCP/IP</h2>
 		<p class="posting-date">11th November 2014</p>
@@ -299,6 +312,6 @@ CV/blob/master/Joe.Loughry_information_security.pdf?raw=true">résumé</a>)
 		-->joe AT call-with-current-continuation.com</a></p>
 
 		<hr class="footnote">
-		<p class="footnote"><!-- BUILD NUMBER -->Build 93</p>
+		<p class="footnote"><!-- BUILD NUMBER -->Build 94</p>
 	</body>
 </html>
