@@ -4,6 +4,7 @@ html_file = blog.html
 css_file = style.css
 scheme_file = index.scm
 unicode_test = unicode_font_test_page.html
+security_page = security/security.html
 
 build_counter = build_counter.txt
 
@@ -30,7 +31,12 @@ css: style
 style:
 	vi $(css_file)
 
+security_contact:
+	vi $(security_page)
+
 spell::
+	aspell --lang=en_GB -H check $(html_file)
+	aspell --lang=en_GB -H check $(security_page)
 	aspell --lang=en_GB -H check robots.txt
 	aspell --lang=en_GB -H check humans.txt
 	aspell --lang=en_GB -H check hackers.txt
