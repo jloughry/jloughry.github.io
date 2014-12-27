@@ -1,1 +1,1 @@
-set no-cache on the security page
+update message to security researchers
