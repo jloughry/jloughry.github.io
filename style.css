@@ -14,7 +14,11 @@ h1 { /* This becomes the web page header. */
 	background-color: DarkBlue;
 	color: white;
 	font-weight: normal;
-	font-family: "Lucida Sans", Serif;
+	font-family: "Lucida Sans", "Source Code Pro", Serif;
+}
+
+h2 {
+    font-family: "Arial", Serif;
 }
 
 .punct {
