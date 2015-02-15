@@ -1,1 +1,1 @@
-add more diagrams to Banker's sequence post
+do text colour in CSS the right way
