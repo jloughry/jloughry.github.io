@@ -5,6 +5,7 @@ css_file = style.css
 scheme_file = index.scm
 unicode_test = unicode_font_test_page.html
 security_page = security/security.html
+404_page = 404.html
 
 build_counter = build_counter.txt
 
@@ -33,6 +34,9 @@ style:
 
 security_contact:
 	vi $(security_page)
+
+404:
+	vi $(404_page)
 
 spell::
 	aspell --lang=en_GB -H check $(html_file)
