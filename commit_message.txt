@@ -1,2 +1,1 @@
-
-add forced information flow
+beginning to explain the figures
