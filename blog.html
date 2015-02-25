@@ -49,13 +49,22 @@
 
         <!-- end of page header -->
 
+        <h2>New consulting company</h2>
+        <p class="posting-date">24th February 2015</p>
+
+        <p>The software development and C&amp;A  consulting firm <a
+        href="mailto:joe@call-with-current-continuation.com?subject=Consulting%20inquiry"><!--
+        -->call-with-current-continuation.com</a>
+        is open for business.
+        </p>
+
         <h2>Information Flows in CDS</h2>
         <p class="posting-date">20th February 2015</p>
 
         <p>An idea I've been playing around with for a while involves
         exhaustively cataloguing all of the allowable permutations of cross
         domain systems (CDS) in collateral, SCI, and international
-        accreditations, as below:</p>
+        accreditations, summarized below:</p>
 
         <img src="./graphics/venn_diagrams_muted.png"
             alt="Venn diagrams of collateral, SCI, and international accreditations"/>
@@ -67,15 +76,36 @@
         similarly, Accreditor 2 is cognisant of a different set of risks
         (<i>A</i><sub>2</sub>) that would be desirable to mitigate,
         and a smaller set (<i>B</i><sub>2</sub>) of risks that are, from
-        Accreditor 2's perspective, possible to mitigate.</p>
+        Accreditor 2's perspective, possible to mitigate. The sets are
+        disjoint because we assume (in the most general case) that
+        accreditors read into different compartments are unable or
+        unwilling to share information.</p>
 
-        <p>Sub-figure (b) represents public information.</p>
+        <p>Sub-figure (b) represents public information. <i>R</i> is the
+        agreed-upon residual risk that both accreditors share; it's outside
+        the smaller areas that both know they can mitigate (and in the
+        general sense, the larger areas <i>A</i><sub>1</sub> and
+        <i>A</i><sub>2</sub> probably overlap to a greater or lesser
+        degree, since everyone knows about the major problems: botnets and
+        Heartbleed and script kiddies).</p>
 
-        <p>Sub-figure (c) represents classified information with a risk of
-        information leakage.</p>
+        <p>In sub-figure (c), <i>L</i> represents classified information
+        with a risk of information leakage from high to low. <i>C</i> is
+        the area of consensus on safety; the second accreditor is aware
+        that that the first has mitigated that portion of the threat, so
+        Accreditor 2 doesn't have to worry about <i>C</i> any more.</p>
+
+        <img src="./graphics/venn_diagrams_for_slides_8.png"
+        alt="collateral accreditation with guilty knowledge" align="right"
+        width="50%">
 
         <p>In sub-figure (d) there is not only a risk of information
-        leakage but personal risk to Accreditor 2 as well.</p>
+        leakage but personal risk to Accreditor 2 as well. The reason is
+        because region <i>H</i>&mdash;remember, this is still an SCI
+        accreditation&mdash; is believed by the first accreditor to be
+        adequately mitigated by security controls, but the second
+        accreditor either doesn't know about the mitigation or doesn't
+        believe it'll work.</p>
 
         <p>Sub-figure (e) shows how the risk of classified information
         leakage and personal risk to one or more accreditors diminishes as
@@ -97,22 +127,28 @@
         hierarchical security relationship. Can we find a way around
         it?</p>
 
-        <p>(Especially interesting are the <span
+        <p>Especially interesting are the <span
         style="background-color:red; color:white">red</span> areas denoted
-        "H" in parts (d), (e), and (g)&mdash;these represent <i>risk
-        mitigations that don't work</i>; the high-side accreditor knows
-        it, but can't tell the low-side accreditor because doing so would
-        reveal the existence of a higher-classified threat.)</p>
+        "H" in parts (d), (e), and (g) above, and at right&mdash;these
+        represent <i>risk mitigations that might not work</i>; the high-side
+        accreditor knows it, but can't tell the low-side accreditor
+        because doing so would reveal the existence of a higher-classified
+        threat.</p>
 
-        <p>The goal of the <b>Policy Interaction</b> layer is to find and
-        highlight the problematic configurations in order to...</p>
+        <p>The goal of the <b>Policy Interaction</b> layer in our notional
+        future cross domain solution is to find and highlight the
+        problematic configurations during testing and development in order
+        to streamline the process and reduce the cost (in both time and
+        dollars) of CDS deployments.</p>
 
         <h2>Testing Custom 404 Error Page</h2>
         <p class="posting-date">7th February 2015</p>
 
         <p><a
         href="http://www.call-with-current-continuation.com/nothing">This</a>
-        is for Papa (1930&ndash;2015).</p>
+        is for Papa, a link to a proof-of-concept imnplementation of a
+        custom 404 error page that provides a more useful link back to
+        content.</p>
 
         <h2>Why you should hire me</h2>
         <p class="posting-date">22nd January 2015</p>
@@ -129,17 +165,21 @@
             <ul>
                 <li>I can predict and control computer security
                     testing &mdash; that's got to be worth a job.</li>
-                <li>Health insurance companies and national intelligence
-                    agencies are increasingly hard to tell apart.</li>
-                <li>Maybe we ought to protect electronic health care
+                <li>Insurance companies and national intelligence
+                    agencies are increasingly hard to tell apart the same
+                    security analysis and security controls work on both.</li>
+                <li>Perhaps we ought to protect electronic health care
                     records better than we've been protecting credit card
                     data lately.</li>
-                <li>Think of me as a new grad with experience.</li>
+                <li>New grads come out plugged into the latest
+                    research&mdash;critical in this threat environment. Old
+                    hands have experience thhe new grads lack. I have
+                    both.</li>
             </ul>
         </p>
 
         <p>
-        Latest <a href="https://github.com/jloughry/CV/blob/master/
+        My latest <a href="https://github.com/jloughry/CV/blob/master/
 Joe.Loughry_information_security.pdf?raw=true">résumé</a> is always here.
         </p>
 
@@ -459,6 +499,6 @@ CV/blob/master/Joe.Loughry_information_security.pdf?raw=true">résumé</a>)
 		-->joe AT call-with-current-continuation.com</a></p>
 
 		<hr class="footnote">
-		<p class="footnote"><!-- BUILD NUMBER -->Build 115</p>
+		<p class="footnote"><!-- BUILD NUMBER -->Build 116</p>
 	</body>
 </html>
