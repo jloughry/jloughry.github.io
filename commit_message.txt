@@ -1,1 +1,1 @@
-update page title to "solutions"
+update Makefile

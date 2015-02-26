@@ -1,12 +1,12 @@
-target = $(html_file)
+target = $(blog_page)
 
-html_file = blog.html
 css_file = style.css
 scheme_file = index.scm
 unicode_test = unicode_font_test_page.html
 security_page = security/security.html
 company_page = company.html
 404_page = 404.html
+blog_page = blog.html
 
 build_counter = build_counter.txt
 
@@ -15,7 +15,8 @@ build_number_value = $(shell cat ${build_counter})
 temporary_files = *.bak consolidated_bibtex_file.bib
 
 all::
-	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(html_file)
+	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(blog_page)
+	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(company_page)
 	@echo $$(($$(cat $(build_counter)) + 1)) > $(build_counter)
 	make commit
 
@@ -39,8 +40,14 @@ security_contact:
 404:
 	vi $(404_page)
 
+company:
+	vi $(company_page)
+
+blog:
+	vi $(blog_page)
+
 spell::
-	aspell --lang=en_GB -H check $(html_file)
+	aspell --lang=en_GB -H check $(blog_page)
 	aspell --lang=en_GB -H check $(security_page)
 	aspell --lang=en_GB -H check robots.txt
 	aspell --lang=en_GB -H check humans.txt
