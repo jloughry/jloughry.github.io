@@ -3,6 +3,7 @@ target = $(blog_page)
 css_file = style.css
 scheme_file = index.scm
 unicode_test = unicode_font_test_page.html
+
 security_page = security/security.html
 company_page = company.html
 404_page = 404.html
@@ -14,9 +15,13 @@ build_number_value = $(shell cat ${build_counter})
 
 temporary_files = *.bak consolidated_bibtex_file.bib
 
+.PHONY : security # there's a directory named security, so we need this
+
 all::
 	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(blog_page)
 	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(company_page)
+	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(security_page)
+	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(404_page)
 	@echo $$(($$(cat $(build_counter)) + 1)) > $(build_counter)
 	make commit
 
@@ -34,7 +39,7 @@ css: style
 style:
 	vi $(css_file)
 
-security_contact:
+security:
 	vi $(security_page)
 
 404:
