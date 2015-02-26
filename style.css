@@ -132,7 +132,7 @@ td {
 
 .example-path {
     color: red;
-    style: bold;
+	font-weight: bold;
 }
 
 .figure-table {

@@ -1,1 +1,1 @@
-validate everything
+fix boldface in CSS
