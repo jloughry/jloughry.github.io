@@ -61,16 +61,143 @@
         <h2>Information Flows in CDS</h2>
         <p class="posting-date">20th February 2015</p>
 
+        <table align="right" width="40%" border="0">
+        <tr><td>&nbsp;</td><td><a
+        href="./graphics/venn_diagrams_muted.png"><img
+        src="./graphics/venn_diagrams_muted.png" width="100%"
+        alt="Venn diagrams of collateral, SCI, and international
+        accreditations"/></a></td></tr>
+        <tr><td>&nbsp;</td><td align="center">
+        <em>Cross domain systems are unique because they always go
+        into an adversarial environment with mutually distrustful data
+        owners.</em></td></tr></table>
+
         <p>An idea I've been playing around with for a while involves
-        exhaustively cataloguing all of the allowable permutations of cross
-        domain systems (CDS) in collateral, SCI, and international
-        accreditations, summarized below:</p>
+        characterising every allowable permutation of cross
+        domain system (CDS) in collateral, SCI, and international
+        accreditations. The approach has been peer reviewed and
+        published (13th IEEE Conference on Technologies for Homeland
+        Security, Boston: 2013); the presentation here is based on a talk I
+        gave last year.</p>
 
-        <img src="./graphics/venn_diagrams_muted.png"
-            alt="Venn diagrams of collateral, SCI, and international accreditations"/>
+        <p>Incident response, analytically, looks a lot like an
+        international coalition; in the case of major incident response,
+        you have large organisations trying to negotiate their jurisdiction
+        and announce their capabilities, in a short amount of time, to
+        those who need it.</p>
 
-        <p>In sub-figure (a), which represents a pure SCI-type
-        international accreditation, Accreditor 1 has a completely
+        <p>Cross domain systems exist to interconnect...anything. They will
+        talk any protocol needed to do it---but they focus on protecting
+        systems from each other. That's what distinguishes them from
+        firewalls; a firewall is usually thought of as protecting an
+        organisation's resources from outside threats, but a cross domain
+        system protects the rest of the world from that organisation as
+        well. If that reminds you of protecting financial markets from
+        rogue traders with access to inside information, it should.</p>
+
+        <p>Certification and accreditation testing are my interest (I'm
+        using the older &ldquo;C&amp;A&rdquo; terminology here instead of
+        the new A&amp;A nomenclature for historical reasons). Certification
+        testing is done on a particular configuration of hardware and
+        software called the &lsquo;evaluated configuration&rsquo;. Usually,
+        an evaluated configuration is not a realistic field configuration,
+        because the certification testers usually want <i>all</i> the
+        features turned on so they can test them. Penetration testing is
+        often done at this phase; penetration testers similarly demand
+        root access and source code. Much like covert channel
+        analysis, penetration testing has no natural end state; pen
+        testers nearly always come up with another layer of attack,
+        if you give them enough time. Part of my research aims to enable the
+        cross domain system developer some measure of control over the
+        duration of certification testing, which otherwise <i>will</i>
+        stretch out to consume all of the available time and money and
+        resources.</p>
+
+        <p>The second type of testing done on cross domain systems happens
+        at the end of installation, but before approval-to-operate. It's
+        called accreditation, and it's done&mdash;every time&mdash;on a particular
+        installation, in a particular place, with a particular
+        configuration and particular users. Certification may be done once, or
+        at most once a year; accreditation is done every time you sell one.</p>
+
+        <p> It pays to get good at accreditation, because you'll be doing
+        it lots.</p>
+
+        <p>Accreditation testing is interesting because for cross domain
+        systems it always involves more than one
+        accreditor&mdash;accreditors represent the interests of data
+        owners&mdash;who mistrust one another. Since there are multiple
+        accreditors, and since each one thinks his or her data is the
+        the most important, this leads directly to multiple rounds of
+        testing. Everybody knows what the best attacks are; there's only
+        so many variations on how you can test that. If every one of those
+        accreditors, for due diligence, performs the same tests over and
+        over again, we don't learn much. That's the problem I set out
+        to solve.
+
+        <table align="right" width="40%" border="0">
+        <tr><td>&nbsp;</td><td><a
+        href="./graphics/venn_diagrams_for_slides_1.png" alt="accreditor's
+        view of a computer system"><img
+        src="./graphics/venn_diagrams_for_slides_1.png" alt="accreditor's
+        view of a computer system" width="100%"></a></td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td><td align="center"><em>The larger circle
+        contains known threats that would be desirable to mitigate
+        (surrounded, of course, by a larger universe of unknown threats);
+        the smaller circle contains only those threats it is deemed
+        possible to mitigate.</td></tr></table>
+
+        <p>The following assumptions are required:
+        <ol>
+            <li>Accreditors have appropriate security clearances for their
+            jobs.</li>
+            <li>Every cross domain system has a high side and a low
+            side.</li>
+        </ol>
+        It's a minimal set of assumptions, not too unrealistic and
+        not far off from the real world. First of all, we assume that
+        all accreditors have just the right security clearance to do
+        their jobs. If they work on Top Secret, they have a Top Secret
+        clearance. If they only work on Confidential, then they will NOT
+        have a Secret clearance, or higher. Everybody's cleared only to the
+        level they need to be.</p>
+
+        <p>The second assumption is that there's a high side and a low
+        side. That's often a matter of opinion, especially in international
+        accreditations, but it simplifies the analysis. Besides, you
+        can always partition any cross domain system with more than two
+        inputs or outputs pairwise into a series of one-in-one-out cross
+        domain systems. We used to have to do this all the time with PL-5
+        systems that you could compose out of one or more PL-4 approved
+        components. PL-5 components are expensive; PL-4 components
+        are cheaper. So you can always reduce a cross domain problem,
+        ultimately, to a high side and a low side.</p>
+
+        <p>Consider an accreditor's view of the system (above and to the
+        right). The larger circle represents those threats that would be
+        <em>desirable</em> to mitigate. The smaller circle contains the
+        subset of threats that it's <em>feasible</em> to
+        mitigate&mdash;everything has a cost, and not every security
+        control the accreditor wants, the accreditor is likely to get. The
+        area between the circles is the residual risk.</p>
+
+        <table align="right" width="40%" border="0">
+        <tr><td>&nbsp;</td><td><a
+        href="./graphics/venn_diagrams_for_slides_2.png" alt="two Venn
+        diagrams non-overlapping"><img
+        src="./graphics/venn_diagrams_for_slides_2.png" alt="two Venn
+        diagrams non-overlapping" width="100%"></a></td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td><td align="center"><em>SCI-type cross domain
+        system</em></td></tr><table>
+
+        <p>In the figure to the right, we have a multi-level system. As
+        soon as you have a multi-level system, you may have two
+        accreditors, and in the most general case, shown here, they
+        share no information.</p>
+
+        <p>Accreditor 1 has a completely
         independent idea of what threats exist (<i>A</i><sub>1</sub>)
         and what risk mitigations are possible (<i>B</i><sub>1</sub>);
         similarly, Accreditor 2 is cognisant of a different set of risks
@@ -81,59 +208,210 @@
         accreditors read into different compartments are unable or
         unwilling to share information.</p>
 
-        <p>Sub-figure (b) represents public information. <i>R</i> is the
-        agreed-upon residual risk that both accreditors share; it's outside
-        the smaller areas that both know they can mitigate (and in the
-        general sense, the larger areas <i>A</i><sub>1</sub> and
-        <i>A</i><sub>2</sub> probably overlap to a greater or lesser
-        degree, since everyone knows about the major problems: botnets and
-        Heartbleed and script kiddies).</p>
+        <p>The circles may overlap&mdash;of course they do!&mdash;everyone
+        knows what the common attacks are, just as everyone knows what's
+        affordable to mitigate. Those are your baseline security controls.
+        What we're more interested in here are classified threats and
+        classified threat mitigations.</p>
 
-        <p>In sub-figure (c), <i>L</i> represents classified information
-        with a risk of information leakage from high to low. <i>C</i> is
-        the area of consensus on safety; the second accreditor is aware
-        that that the first has mitigated that portion of the threat, so
-        Accreditor 2 doesn't have to worry about <i>C</i> any more.</p>
+        <table align="left" width="40%" border="0">
+        <tr><td><a href="./graphics/venn_diagrams_for_slides_3.png"
+        alt="two Venn diagrams beginning to overlap"><img
+        src="./graphics/venn_diagrams_for_slides_3.png" alt="two Venn
+        diagrams beginning to overlap" width="100%"></a></td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align="center"><em>Public information</em></td></tr><table>
 
-        <img src="./graphics/venn_diagrams_for_slides_8.png"
-        alt="collateral accreditation with guilty knowledge" align="right"
-        width="50%">
+        <p>In the figure at left, the highlighted area <i>R</i> is the
+        agreed residual risk that both accreditors share. These two
+        accreditors don't share much&mdash;the question of which is the
+        &lsquo;high side&rsquo; and which is the &lsquo;low side&rsquo;
+        is often a matter of opinion, especially in the SCI world, but
+        these two agree on the known threats. Both accreditors agree that
+        some risks, highlighted here in cyan, are not protect-able against,
+        and are going to remain a threat to the system in production, as
+        residual risk. It's outside the smaller areas that both know
+        they can mitigate (and in the general sense, the larger areas
+        <i>A</i><sub>1</sub> and <i>A</i><sub>2</sub> probably overlap to
+        a greater or lesser degree, since everyone knows about the major
+        problems: bot-nets and Heartbleed and script kiddies).</p>
 
-        <p>In sub-figure (d) there is not only a risk of information
-        leakage but personal risk to Accreditor 2 as well. The reason is
-        because region <i>H</i>&mdash;remember, this is still an SCI
-        accreditation&mdash; is believed by the first accreditor to be
-        adequately mitigated by security controls, but the second
+        <p> This is the ideal SCI situation, reachable sometimes in
+        practice. Public information, after all, need not be protected from
+        disclosure.</p>
+
+        <table align="right" width="40%" border="0">
+        <tr><td>&nbsp;</td><td><a
+        href="./graphics/venn_diagrams_for_slides_4.png" alt="Venn diagrams
+        overlapping more, with the outer circle of one overlapping the
+        inner circle of the other"><img
+        src="./graphics/venn_diagrams_for_slides_4.png" alt="Venn diagrams
+        overlapping more, with the outer circle of one overlapping the
+        inner circle of the other" width="100%"></a></td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td><td align="center"><em>Classified information
+        with risk of information leakage</em></td></tr><table>
+
+        <p>But here's where things begin to get interesting. As
+        the two accreditors perform their security testing, both of
+        them <em>learn</em> more about the system under test. The small
+        area <i>C</i>, shown in green, is <b>safe</b> because Accreditor
+        1 has mitigated it with security controls. The second accreditor
+        can legally be made aware (without loss of generality) that that
+        the first has mitigated that portion of the threat, so Accreditor 2
+        doesn't have to worry about <i>C</i> any more.</p>
+
+        <p>But there's a new risk of information leakage from high to low.
+        Region <i>L</i>, shown in dark blue, represents classified
+        information&mdash;that is, the existence of a threat that
+        is classified higher than the clearance of the low-side
+        accreditor. (Remember the first assumption: that accreditors are
+        cleared only as high as they need to be, in adherence to the letter
+        <em>and</em> the spirit of the law.)</p>
+
+        <p>The high side accreditor, on the right side of the figure,
+        doesn't want to admit to the low side accreditor that these threats
+        <em>still</em> can't properly be mitigated even with classified
+        security controls. But it's still safe, because the high side
+        accreditor isn't <em>compelled</em> to say anything, and it's safer
+        to keep his or her mouth shut. There's a threat of information
+        leakage, but no actual information leakage, and the existence of
+        the classified threat (for which no mitigation is feasible on the
+        high side) is still protected.</p>
+
+        <table align="left" width="40%" border="0">
+        <tr><td><a href="./graphics/venn_diagrams_for_slides_5.png"
+        alt="Venn diagrams overlapping so much that the centre regions of
+        both overlap slightly"><img
+        src="./graphics/venn_diagrams_for_slides_5.png"
+        alt="Venn diagrams overlapping so much now that the centre regions
+        of both overlap slightly" width="100%"></a></td><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td align="center"><em>The danger zone</em></td></tr><table>
+
+        <p>The red zone emerges with the occurrence of <em>forced
+        communication</em>. The high side accreditor&mdash;and remember,
+        this is an international (or SCI) cross domain system, so
+        the question of which side is the high side is a matter of
+        opinion&mdash;the high side accreditor knows something dangerous:
+        he or she knows that some of the low-side security controls <b>DO
+        NOT WORK</b>. But that information is classified. The high side
+        accreditor, though, personally accepts the risk for the correct
+        operation of the <em>entire</em> cross domain system&mdash;not just
+        part of it&mdash;if he or she accredits it.</p>
+        
+        <p>Should the high-side accreditor refuse to accredit? To do
+        otherwise would shoulder a known risk (that the true residual risk
+        of the system is higher than generally believed); in that case
+        the high-side accreditor runs the risk of going to jail. Unable
+        to say precisely why he won't accredit&mdash;because that is a
+        violation of his oath to protect classified information&mdash;if
+        he refuses to accredit, <em>even if he won't say why</em>, the act
+        in itself leaks the existence of a classified threat with no known
+        mitigation.</p>
+        
+        <p>Checkmate. (Note that the previous risk of leakage of the
+        existence of classified threat mitigations, in dark blue, still
+        exists, but that's a different kind of risk.)</p>
+
+        <p>Here, there is not only a risk of information leakage but
+        personal risk to Accreditor 2 as well; the red region
+        <i>H</i>&mdash;remember, this is still an SCI
+        accreditation&mdash;is believed by the first accreditor to
+        be adequately mitigated by security controls, but the second
         accreditor either doesn't know about the mitigation or doesn't
         believe it'll work.</p>
 
-        <p>Sub-figure (e) shows how the risk of classified information
-        leakage and personal risk to one or more accreditors diminishes as
-        the situation approaches a pure collateral configuration.</p>
-        
-        <p>Sub-figure (f) is the degenerate configuration of a null cross
-        domain system.</p>
+        <table align="right" width="40%" border="0">
+        <tr><td>&nbsp;</td><td><a
+        href="./graphics/venn_diagrams_for_slides_6.png" alt="Venn
+        diagrams approaching complete overlap, shrinking the problematic
+        regions"><img src="./graphics/venn_diagrams_for_slides_6.png"
+        alt="Venn diagrams approaching complete overlap, shrinking the
+        problematic regions" width="100%"></a></td></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td><td align="center"><em>As the situation
+        approaches a purely collateral accreditation, the zone of hazardous
+        overlap begins to shrink.</em></td></tr><table>
 
-        <p>Sub-figure (g) shows a collateral (non-SCI-like) accreditation
-        in which Accreditor 1 has a lower security clearance than
-        Accreditor 2; in this example, Accreditor 2 knows everything
-        Accreditor 1 knows, but Accreditor 1 does not know everything
-        Accreditor 2 knows.</p>
+        <p>As the two accreditors get more and more into each others'
+        heads&mdash;facilitated by more overlap of their SCI compartments
+        or international intelligence sharing agreements&mdash;the area of
+        agreement over the true level of residual risk of the cross domain
+        system grows. The risk of classified information leakage and
+        personal risk to one or more accreditors diminishes as the
+        situation approaches a pure collateral configuration.</p>
 
-        <p>In some reachable cases, desirable information flows may be
-        inhibited, or undesirable information flows may be forced. These
-        represent information asymmetry in the accreditor-to-accreditor
-        relationship and are <i>logical consequences</i> of the
-        hierarchical security relationship. Can we find a way around
-        it?</p>
+        <p>In the degenerate situation, below, there is complete agreement
+        on residual risk (<i>A</i><sub>1</sub> = <i>A</i><sub>2</sub> =
+        <i>R</i>), complete consensus on safety (<i>B</i><sub>1</sub> =
+        <i>B</i><sub>2</sub> = <i>C</i>), and both accreditors know all.
+        It's not very interesting.</p>
 
-        <p>Especially interesting are the <span
-        style="background-color:red; color:white">red</span> areas denoted
-        "H" in parts (d), (e), and (g) above, and at right&mdash;these
-        represent <i>risk mitigations that might not work</i>; the high-side
-        accreditor knows it, but can't tell the low-side accreditor
-        because doing so would reveal the existence of a higher-classified
-        threat.</p>
+        <table align="left" width="40%" border="0">
+        <tr><td><a href="./graphics/venn_diagrams_for_slides_7.png"
+        alt="completely overlapping Venn diagrams"><img
+        src="./graphics/venn_diagrams_for_slides_7.png"
+        alt="completely overlapping Venn diagrams"
+        width="100%"></a></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr>
+        <tr><td align="center"><em>Degenerate case</em></td></tr><table>
+
+        <p>So, that was the abstract situation&mdash;it models
+        international or SCI accreditations, where there is no formal
+        channel of communication between accreditors on different
+        sides. That's not an uncommon problem for cross domain system
+        developers; does the U.S. government &lsquo;outrank&rsquo; Her
+        Majesty&apos;s own information protection? The U.K. government
+        doesn't think so.</p>
+
+        <p>So let's look at a simpler case, one occurring entirely inside
+        the U.S. military or U.S. government itself (but not the
+        intelligence community, though&mdash;they use SCI). Here we're
+        connecting a Top Secret network to a Secret one. We can assume
+        from this point on that the high side accreditor knows everything
+        the low side accreditor knows. But the high side accreditor knows
+        more&mdash;Top Secret things. (See the figure to the right.)</p>
+
+        <table align="right" width="40%" border="0">
+        <tr><td>&nbsp;</td><td><a
+        href="./graphics/venn_diagrams_for_slides_8.png" alt="a smaller
+        Venn diagram completely enclosed within the outer circle of a
+        larger one, partially overlapping the inner circle of the larger
+        one"><img src="./graphics/venn_diagrams_for_slides_8.png"
+        alt="a smaller Venn diagram completely enclosed within the outer
+        circle of a larger one, partially overlapping the inner circle of
+        the larger one"
+        width="100%"></a></td></tr><tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td><td align="center"><em>Collateral CDS with
+        different security clearances</em></td></tr><table>
+
+        <p>Oh, no&mdash;it happened again! As security testing progresses,
+        it can happen that the high side accreditor becomes aware of
+        security controls that the low side accreditor has put in place, in
+        good faith, but that <b>don't work</b>. I call this &lsquo;guilty
+        knowledge&rsquo;. The other areas over on the right, the dark
+        grey and black areas, are classified threats and classified threat
+        mitigations that the high side accreditor can't talk about. But the
+        area in red represents <em>forced communication</em>.</p>
+
+        <p>There is a paradox in the Bell&ndash;LaPadula security model. If
+        you clear your accreditors only to the level they need to be
+        cleared to do their jobs, then some desirable information flows are
+        inhibited and some undesirable information flows are forced. If, on
+        the other hand, you clear a pool of accreditors all to Top Secret,
+        and you use them on jobs that don't require a Top Secret clearance
+        all the time, then the information asymmetry disappears and the
+        information leakage doesn't happen. It is a paradox, that loosening
+        the security rules actually improves security.</p>
+
+        <p>In some reachable cases, that is, in <em>real</em> installation
+        problems that cross domain system developers and installers
+        sometimes encounter in the field, desirable information flows
+        may be inhibited, or undesirable information flows may be
+        forced. These represent information asymmetry in the
+        accreditor-to-accreditor relationship and are <i>logical
+        consequences</i> of the hierarchical security relationship. Can we
+        find a way around it?</p>
 
         <p>The goal of the <b>Policy Interaction</b> layer in our notional
         future cross domain solution is to find and highlight the
@@ -146,7 +424,7 @@
 
         <p><a
         href="http://www.call-with-current-continuation.com/nothing">This</a>
-        is for Papa, a link to a proof-of-concept imnplementation of a
+        is for Papa, a link to a proof-of-concept implementation of a
         custom 404 error page that provides a more useful link back to
         content.</p>
 
@@ -173,7 +451,7 @@
                     data lately.</li>
                 <li>New grads come out plugged into the latest
                     research&mdash;critical in this threat environment. Old
-                    hands have experience thhe new grads lack. I have
+                    hands have experience that new grads lack. I have
                     both.</li>
             </ul>
         </p>
@@ -499,6 +777,6 @@ CV/blob/master/Joe.Loughry_information_security.pdf?raw=true">résumé</a>)
 		-->joe AT call-with-current-continuation.com</a></p>
 
 		<hr class="footnote">
-		<p class="footnote"><!-- BUILD NUMBER -->Build 117</p>
+		<p class="footnote"><!-- BUILD NUMBER -->Build 118</p>
 	</body>
 </html>
