@@ -1,1 +1,1 @@
-link to company.html directly
+update page title to "solutions"
