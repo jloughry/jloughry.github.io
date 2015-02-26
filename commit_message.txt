@@ -1,1 +1,1 @@
-running HTML through W3C validator and fixing errors
+update more to CSS
