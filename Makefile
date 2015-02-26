@@ -5,6 +5,7 @@ css_file = style.css
 scheme_file = index.scm
 unicode_test = unicode_font_test_page.html
 security_page = security/security.html
+company_page = company.html
 404_page = 404.html
 
 build_counter = build_counter.txt
@@ -44,6 +45,8 @@ spell::
 	aspell --lang=en_GB -H check robots.txt
 	aspell --lang=en_GB -H check humans.txt
 	aspell --lang=en_GB -H check hackers.txt
+	aspell --lang=en_GB -H check $(company_page)
+	aspell --lang=en_GB -H check $(404_page)
 
 #
 # I hate to hard-code this path, because the resulting functionality only
