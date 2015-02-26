@@ -1,1 +1,1 @@
-add validator link
+escape ampersands (in the URL that W3C gave us!)
