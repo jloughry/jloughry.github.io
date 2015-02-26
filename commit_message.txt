@@ -1,1 +1,1 @@
-re-validate after closing <table> tags
+self closing <a name=.../> tags are deprecated; use id="..." on the nearest container instead
