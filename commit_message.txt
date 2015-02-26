@@ -1,1 +1,1 @@
-update more to CSS
+prefer CSS padding to use of &nbsp; everywhere
