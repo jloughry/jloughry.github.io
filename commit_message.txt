@@ -1,1 +1,1 @@
-remove all scripts
+testing cache manifest in security contact page
