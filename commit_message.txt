@@ -1,1 +1,1 @@
-add company page
+update link on top of blog to company page
