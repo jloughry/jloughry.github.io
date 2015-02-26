@@ -1,1 +1,1 @@
-prefer CSS padding to use of &nbsp; everywhere
+re-validate after closing <table> tags
