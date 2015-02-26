@@ -1,1 +1,1 @@
-escape ampersands (in the URL that W3C gave us!)
+update validator URL and validate again
