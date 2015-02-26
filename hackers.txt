@@ -1,35 +1,42 @@
 "What is the most interesting source code you ever read?"
 
-That's my favourite interview question. It's a much better question for interviewing programmers
-than the old fail "what is your greatest weakness?" (I'm always tempted to ask interviewers who
-use that one, "how often do you get a useful answer to that question?" and some day I'm going to
-ask.) Programmers who read others' code are better programmers, in my experience.
+That's my favourite interview question. It's a much better question for
+interviewing programmers than the old fail "what is your greatest
+weakness?" (I'm always tempted to ask interviewers who use that one,
+"how often do you get a useful answer to that question?" and some day I'm
+going to ask.) Programmers who read others' code are better programmers,
+in my experience.
 
-My answer to the question, "what is the most interesting programme you've ever read?" is the
-following; it's the heraldic language description of my college's shield, which can be seen at
+My answer to the question, "what is the most interesting
+programme you've ever read?" is the following; it's the heraldic
+language description of my college's shield, which can be seen at
 http://en.wikipedia.org/wiki/St_Cross_College,_Oxford
 
 	Argent a cross potent purpure a quarter counterchanged
 
-There is not a syllable wasted in that description. As a programming language, it's beautiful.
-It's context-free with rabies. It's a complete description; anyone who knows heraldic language
-can use it to draw unambiguously the whole design, but every part of the description that isn't
-implicit or deducible is omitted. Unpacked, it means:
+There is not a syllable wasted in that description. As a programming
+language, it's beautiful. It's context-free with rabies. It's a complete
+description; anyone who knows heraldic language can use it to draw
+unambiguously the whole design, but every part of the description that
+isn't implicit or deducible is omitted. Unpacked, it means:
 
 1. Begin with a blank shield, coloured silver ("argent").
 
-2. In the centre of the shield (because it didn't specify a different place) put a cross with
-T-shaped arms ("a cross potent")---there are about a dozen different crosses, all with their
-own names---and make it purple ("purpure").
+2. In the centre of the shield (because it didn't specify a different
+place) put a cross with T-shaped arms ("a cross potent")---there are about
+a dozen different crosses, all with their own names---and make it purple
+("purpure").
 
-3. Reverse the foreground and background colours of the upper-left quadrant of the shield ("a
-quarter counterchanged")---because it didn't say which quarter, it means the upper left by
-default; "counterchanged" is a keyword that indicates a standard graphical operation.
+3. Reverse the foreground and background colours of the upper-left quadrant
+of the shield ("a quarter counterchanged")---because it didn't say which
+quarter, it means the upper left by default; "counterchanged" is a keyword
+that indicates a standard graphical operation.
 
-Anything that isn't specified isn't important; e.g., all shades of purple are equivalent on
-shields, and the precise position of the cross with respect to the centre (centroid?) of the
-shield isn't significant---if it's visually in the centre, it's correct.
+Anything that isn't specified isn't important; e.g., all shades of purple
+are equivalent on shields, and the precise position of the cross with
+respect to the centre (centroid?) of the shield isn't significant---if it's
+visually in the centre, it's correct.
 
-The language is thousands of years old but with a little DSL help, it transliterates into
-PostScript almost unchanged.
+The language is thousands of years old but with a little DSL help, it
+transliterates into PostScript almost unchanged.
 
