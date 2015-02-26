@@ -1,1 +1,1 @@
-fix boldface in CSS
+validate CSS
