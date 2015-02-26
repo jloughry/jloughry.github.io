@@ -1,1 +1,1 @@
-update subject line on email address (and de-obfuscate email addresses displayed)
+running HTML through W3C validator and fixing errors

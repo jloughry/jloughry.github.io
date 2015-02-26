@@ -135,3 +135,8 @@ td {
     style: bold;
 }
 
+.figure-table {
+    width: 40%;
+    border: none;
+}
+
