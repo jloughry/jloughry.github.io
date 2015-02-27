@@ -3,6 +3,7 @@ target = $(blog_page)
 css_file = style.css
 scheme_file = index.scm
 unicode_test = unicode_font_test_page.html
+todo_file = TODO.txt
 
 security_page = security/security.html
 company_page = company.html
@@ -50,6 +51,9 @@ company:
 
 blog:
 	vi $(blog_page)
+
+todo:
+	vi $(todo_file)
 
 spell::
 	aspell --lang=en_GB -H check $(blog_page)

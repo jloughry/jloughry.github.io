@@ -1,0 +1,8 @@
+TODO:
+
+1. Maintain separate build_counter files for each target; update the
+corresponding build_counter only when the associated file is edited.
+
+2. Lighten the page background, or add a gradient, or do something
+(lightweight, performance-wise) to improve visual appearance.
+
