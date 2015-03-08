@@ -1,1 +1,1 @@
-update unicode_font_test_page.html to new code point for POWER SLEEP SYMBOL
+page title should be same as function argument
