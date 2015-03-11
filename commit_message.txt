@@ -1,1 +1,1 @@
-page title should be same as function argument
+update licence file
