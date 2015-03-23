@@ -1,1 +1,1 @@
-force HTTPS with script in <head>
+TODO: update script in <head> of all pages
