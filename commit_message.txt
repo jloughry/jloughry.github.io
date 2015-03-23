@@ -1,1 +1,1 @@
-TODO: update script in <head> of all pages
+update all links on this site to https://
