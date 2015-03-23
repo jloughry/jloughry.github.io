@@ -1,1 +1,1 @@
-add SSL via CloudFlare
+force HTTPS with script in <head>
