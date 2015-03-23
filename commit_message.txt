@@ -1,1 +1,1 @@
-add Google Analytics code to all pages
+add rel=canonical to page, but commented out until I can make it https://
