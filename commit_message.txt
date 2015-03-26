@@ -1,1 +1,1 @@
-test if Travis.ci build error persists
+require Ruby version in .travis.yml
