@@ -1,1 +1,1 @@
-require Ruby version in .travis.yml
+oh, all right; fix cargo-culted code
