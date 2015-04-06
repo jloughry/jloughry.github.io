@@ -1,1 +1,1 @@
-update PGP key (same fingerprint, added new email address)
+shorter email address
