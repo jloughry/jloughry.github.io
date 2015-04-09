@@ -51,6 +51,36 @@
 
         <!-- end of page header -->
 
+        <h2>Unicode renderer hacking</h2>
+        <p class="posting-date">9th April 2015</p>
+
+        <p>What are the limits of what can be gotten away with in the UTF-8
+        context of a commercial web site like <a
+        href="www.linkedin.com">LinkedIn</a>?</p>
+
+        <p>Limited support for multiple columns:</p>
+
+        <p>Ｃｏｌｕｍｎ  Ａ　　　　Ｃｏｌｕｍｎ  Ｂ　　　　Ｃｏｌｕｍｎ  Ｃ</p>
+
+        <p>Surprisingly, the Unicode rendering functionality usually is
+        complete enough that even things like RIGHT TO LEFT OVERRIDE work
+        as expected. I wasn't able to bend it to animation, though.</p>
+
+        <p>ʇxǝʇ spɹɐʍʞɔɐq puɐ uʍop ǝpısdn</p>
+
+<pre>
+╔═╦╗
+╠═╬╣ box drawing works well if enclosed in <code>&lt;pre&gt;</code> tags.
+╚═╩╝
+</pre>
+
+        <p>▂▃▄▅▆▇█ Tiny bar charts; <i>i.e.</i>, Tufte's &ldquo;sparklines&rdquo;
+        can be embedded, but font support for the necessary characters is
+        problematic in browsers.
+
+        <p>There is limited support for other graphics; <i>e.g.</i>,</p>
+        <p>╭╮<br/>╰╯</p>
+
         <h2>Core of a new experiment</h2>
         <p class="posting-date">25th March 2015</p>
 
@@ -846,7 +876,7 @@
 		-->Joe.Loughry@callslashcc.com</a></p>
 
 		<hr class="footnote">
-		<p class="footnote"><!-- BUILD NUMBER -->Build 159</p>
+		<p class="footnote"><!-- BUILD NUMBER -->Build 160</p>
 
         <!-- for Google Analytics -->
         <script>
