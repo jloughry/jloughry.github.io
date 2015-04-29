@@ -1,2 +1,1 @@
-preserve LinkedIn Summary hacking results here for posterity.
-
+fixed typo
