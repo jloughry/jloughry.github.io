@@ -1,1 +1,1 @@
-fixed typo
+add word cloud example to show someone
