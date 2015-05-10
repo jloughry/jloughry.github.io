@@ -27,7 +27,7 @@ all::
 	make commit
 
 clean::
-	rm -f $(temporary_files)
+	rm -fv $(temporary_files)
 
 vi:
 	vi $(target)
@@ -99,7 +99,7 @@ all:: symlink-to-bibtex-file
 
 clean::
 	@echo "This is \"clean\" in the common.mk file."
-	rm -f README.md.bak $(commit_message)
+	rm -fv README.md.bak $(commit_message)
 
 spell::
 	aspell --lang=en_GB -H check README.md
@@ -156,7 +156,7 @@ commit_only:
 		make $(commit_message)                                 ; \
 		git add .                                              ; \
 		git commit -aF $(commit_message)                       ; \
-		rm -f $(commit_message)                                ; \
+		rm -fv $(commit_message)                               ; \
 	fi
 
 sync:
