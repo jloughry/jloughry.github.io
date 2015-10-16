@@ -1,1 +1,1 @@
-use rm -fv option
+blog update
