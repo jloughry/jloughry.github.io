@@ -1,1 +1,1 @@
-blog update
+remove Google analytics code
