@@ -1,1 +1,1 @@
-update email address; fix spelling
+update security page after removing Google trackers
