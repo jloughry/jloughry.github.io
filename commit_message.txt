@@ -1,1 +1,1 @@
-add PGP key at bottom of page
+change name of company; add image; fix résumé path
