@@ -1,1 +1,1 @@
-change name of company; add image; fix résumé path
+update name and graphic
