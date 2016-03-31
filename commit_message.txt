@@ -1,1 +1,1 @@
-change graphic to latest
+fix permissions
