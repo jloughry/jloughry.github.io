@@ -1,1 +1,1 @@
-update logo
+add SHA-1 hash to filename of logo to fool browser hash.
