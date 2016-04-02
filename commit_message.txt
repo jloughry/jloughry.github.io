@@ -1,1 +1,1 @@
-add SHA-1 hash to filename of logo to fool browser hash.
+italicise subtitle in logo; delete top line
