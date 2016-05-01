@@ -1,1 +1,1 @@
-italicise subtitle in logo; delete top line
+add id link to allow linking within page
