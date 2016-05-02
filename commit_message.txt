@@ -1,1 +1,1 @@
-add figure numbers to Venn diagram article; slightly improve wording
+fix name of company in link
