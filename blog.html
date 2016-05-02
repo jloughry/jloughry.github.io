@@ -301,15 +301,15 @@
         <h2 id="sets">Information Flows in CDS</h2>
         <p class="posting-date">20th February 2015</p>
 
-        <table style="width: 40%; float: right; margin: 5px">
+        <table style="width: 40%; float: right; margin: 10px">
             <tr><td><a href="./graphics/venn_diagrams_muted.png"><img
                 src="./graphics/venn_diagrams_muted_400w.png" alt="Venn
                 diagrams of collateral, SCI, and international
                 accreditations"/></a></td></tr>
             <tr><td>&nbsp;</td></tr>
-            <tr><td style="text-align: center"><em>Cross domain systems are
-                unique because they always go into an adversarial
-                environment with mutually distrustful data
+            <tr><td style="text-align: center">Figure 1. <em>Cross domain
+                systems are unique because they always go into an
+                adversarial environment with mutually distrustful data
                 owners.</em></td></tr></table>
 
         <p>An idea I've been playing around with for a while involves
@@ -381,13 +381,13 @@
         over again, we don't learn anything new. That's the problem I
         set out to solve.
 
-        <table style="width: 40%; float: right; margin: 5px">
+        <table style="width: 40%; float: right; margin: 10px">
             <tr><td><a
                 href="./graphics/venn_diagrams_for_slides_1.png"><img
                 src="./graphics/venn_diagrams_for_slides_1_400w.png"
                 alt="accreditor's view of a computer system"></a></td></tr>
             <tr><td>&nbsp;</td></tr>
-            <tr><td style="text-align: center"><em>The larger circle
+            <tr><td style="text-align: center">Figure 2. <em>The larger circle
                 contains known threats that would be desirable to mitigate
                 (surrounded, of course, by a larger universe of unknown
                 threats); the smaller circle contains only those threats it
@@ -423,24 +423,24 @@
         a cross domain problem, ultimately, to a high side and a low
         side.</p>
 
-        <p>Consider an accreditor's view of the system (above and to the
-        right). The larger circle represents those threats that would be
+        <p>Consider an accreditor's view of the system (Figure 2, above).
+        The larger circle represents those threats that would be
         <em>desirable</em> to mitigate. The smaller circle contains the
         subset of threats that it's <em>feasible</em> to
         mitigate&mdash;everything has a cost, and not every security
         control the accreditor wants, the accreditor is likely to get. The
         area between the circles is the residual risk.</p>
 
-        <table style="width: 40%; float:right; margin: 5px">
+        <table style="width: 40%; float:right; margin: 10px">
             <tr><td><a
                 href="./graphics/venn_diagrams_for_slides_2.png"><img
                 src="./graphics/venn_diagrams_for_slides_2_400w.png"
                 alt="two Venn diagrams non-overlapping"></a></td></tr>
             <tr><td>&nbsp;</td></tr>
-            <tr><td style="text-align: center"><em>SCI-type
+            <tr><td style="text-align: center">Figure 3. <em>SCI-type
                 cross domain system</em></td></tr></table>
 
-        <p>In the figure to the right, we have a multi-level system. As
+        <p>In Figure 3, to the right, we have a multi-level system. As
         soon as you have a multi-level system, you may have two
         accreditors, and in the most general case, shown here, they
         share no information.</p>
@@ -465,16 +465,16 @@
         what we're more interested in here are classified threats and
         classified threat mitigations.</p>
 
-        <table style="width: 40%; float: left; margin: 5px">
+        <table style="width: 40%; float: left; margin: 10px">
             <tr><td><a
                 href="./graphics/venn_diagrams_for_slides_3.png"><img
                 src="./graphics/venn_diagrams_for_slides_3_400w.png"
                 alt="two Venn diagrams beginning to overlap"></a></td></tr>
             <tr><td>&nbsp;</td></tr>
-            <tr><td style="text-align: center"><em>Example of public
-                information</em></td></tr></table>
+            <tr><td style="text-align: center">Figure 4. <em>Example of
+                public information (area <i>R</i>)</em></td></tr></table>
 
-        <p>In the figure to the left, the highlighted area <i>R</i> is
+        <p>In Figure 4, to the left, the highlighted area <i>R</i> is
         the agreed residual risk that both accreditors share. These
         particular accreditors don't share much&mdash;the question of
         which is the &lsquo;high side&rsquo; and which is the &lsquo;low
@@ -483,9 +483,10 @@
         accreditors concur that some risks, highlighted here in cyan, are
         not protect-able against, and are going to remain a threat to the
         system in production, as residual risk. It's outside the smaller
-        areas that both know they can mitigate.</p>
+        areas (<i>B</i><sub>1</sub> and <i>B</i><sub>2</sub>) that both
+        accreditors know they can mitigate.</p>
         
-        <p>In the general sense, <i>A</i><sub>1</sub> and
+        <p>In the general sense, areas <i>A</i><sub>1</sub> and
         <i>A</i><sub>2</sub> probably overlap to a greater or lesser
         degree&mdash;since everyone knows about the major problems:
         bot-nets and Heartbleed and script kiddies and what-not&mdash;but
@@ -495,7 +496,7 @@
         practice. Public information, after all, need not be protected from
         disclosure.</em></p>
 
-        <table style="width: 40%; float: right; margin: 5px">
+        <table style="width: 40%; float: right; margin: 10px">
             <tr><td><a
                 href="./graphics/venn_diagrams_for_slides_4.png"><img
                 src="./graphics/venn_diagrams_for_slides_4_400w.png"
@@ -503,13 +504,15 @@
                 circle of one overlapping the inner circle of the
                 other"></a></td></tr>
             <tr><td>&nbsp;</td></tr>
-            <tr><td style="text-align: center"><em>Classified information
-                with risk of information leakage</em></td></tr></table>
+            <tr><td style="text-align: center">Figure 5. <em>Classified
+                information (region <i>L</i>) at risk of information
+                leakage</em></td></tr></table>
 
         <p>But here's where things begin to get interesting. As
         the two accreditors perform their security testing, both of
-        them <em>learn</em> more about the system under test. The small
-        area <i>C</i>, shown in green, is <b>safe</b> because Accreditor
+        them learn more about the system under test. The small
+        area <i>C</i>, shown in green in Figure 5 to the right, is
+        <b>safe</b> because Accreditor
         1 has mitigated it with security controls. The second accreditor
         can legally be made aware (without loss of generality) that that
         the first has mitigated that portion of the threat, so Accreditor 2
@@ -526,14 +529,14 @@
         <p>The high side accreditor, on the right side of the figure,
         doesn't want to admit to the low side accreditor that these threats
         <em>still</em> can't properly be mitigated even with classified
-        security controls. But it's still safe, because the high side
+        security controls. But it remains safe, because the high side
         accreditor isn't <em>compelled</em> to say anything, and it's safer
         to keep his or her mouth shut. There's a threat of information
         leakage, but no actual information leakage, and the existence of
         the classified threat (for which no mitigation is feasible on the
         high side) remains protected.</p>
 
-        <table style="width: 40%; float: left; margin: 5px">
+        <table style="width: 40%; float: left; margin: 10px">
             <tr><td><a
                 href="./graphics/venn_diagrams_for_slides_5.png"><img
                 src="./graphics/venn_diagrams_for_slides_5_400w.png"
@@ -541,27 +544,27 @@
                 that the centre regions of both overlap
                 slightly"></a></td></tr>
             <tr><td>&nbsp;</td></tr>
-            <tr><td style="text-align: center"><em>The danger
+            <tr><td style="text-align: center">Figure 6. <em>The danger
                 zone</em></td></tr></table>
 
-        <p>The red zone emerges with the occurrence of <em>forced
-        communication</em>. The high side accreditor&mdash;and remember,
-        this is an international (or SCI) cross domain system, so
-        the question of which side is the high side is a matter of
-        opinion&mdash;the high side accreditor knows something dangerous:
-        he or she knows that some of the low-side security controls <b>do
-        not work</b>. But that information is classified. The high side
-        accreditor, though, personally accepts the risk for the correct
+        <p>The red zone (Figure 6, to the left) emerges with the occurrence
+        of <em>forced communication</em> for the first time. The high side
+        accreditor&mdash;and remember, this is an international (or SCI)
+        cross domain system, so the question of which side is the high side
+        is a matter of opinion&mdash;knows something dangerous:
+        he or she knows that some of the low-side security controls <b>don't
+        work</b>. But that information is classified. The high side
+        accreditor, though, is required personally to accept the risk for the correct
         operation of the <em>entire</em> cross domain system&mdash;not just
         part of it&mdash;if he or she accredits it.</p>
         
         <p>Should the high-side accreditor refuse to accredit? To do
-        otherwise would shoulder a known risk (that the true residual risk
+        otherwise would be to shoulder a known risk (that the true residual risk
         of the system is higher than generally believed); in that case
         the high-side accreditor runs the risk of going to jail. Unable
-        to say precisely why he won't accredit&mdash;because that is a
-        violation of his oath to protect classified information&mdash;if
-        he refuses to accredit, <em>even if he won't say why</em>, the
+        to say precisely why he or she won't accredit&mdash;because that would
+        be a violation of the oath to protect classified information&mdash;if
+        he or she refuses to accredit, <em>even if not saying why</em>, the
         refusal in itself leaks the existence of a classified threat with
         no known mitigation.</p>
         
@@ -572,19 +575,19 @@
         <p>Here, there is not only a risk of information leakage but
         personal risk to Accreditor 2; the red region
         <i>H</i>&mdash;remember, this is still an SCI
-        accreditation&mdash;is believed by the first accreditor to
+        accreditation&mdash;is believed by the low side accreditor to
         be adequately mitigated by security controls, but the second
         accreditor either doesn't know about the first's mitigation or
         doesn't believe it'll work.</p>
 
-        <table style="width: 40%; float: right; margin: 5px">
+        <table style="width: 40%; float: right; margin: 10px">
             <tr><td><a
                 href="./graphics/venn_diagrams_for_slides_6.png"><img
                 src="./graphics/venn_diagrams_for_slides_6_400w.png"
                 alt="Venn diagrams approaching complete overlap, shrinking
                 the problematic regions"></a></td></tr>
             <tr><td>&nbsp;</td></tr>
-            <tr><td style="text-align: center"><em>As the situation
+            <tr><td style="text-align: center">Figure 7. <em>As the situation
                 approaches a purely collateral accreditation, the zone of
                 hazardous overlap begins to shrink.</em></td></tr></table>
 
@@ -592,24 +595,24 @@
         heads&mdash;facilitated by more overlap of their SCI compartments
         or international intelligence sharing agreements&mdash;the area of
         agreement over the true level of residual risk of the cross domain
-        system grows. The risk of classified information leakage and
-        personal risk to one or more accreditors diminishes as the
-        situation approaches a pure collateral configuration.</p>
+        system grows (Figure 7, to the right). The risk of classified
+        information leakage and personal risk to one or more accreditors
+        diminishes as the situation approaches a pure collateral configuration.</p>
 
-        <p>In the degenerate situation, below, there is complete agreement
+        <p>In the degenerate situation, Figure 8 (below) there is complete agreement
         on residual risk (<i>A</i><sub>1</sub> = <i>A</i><sub>2</sub> =
         <i>R</i>), complete consensus on safety (<i>B</i><sub>1</sub> =
         <i>B</i><sub>2</sub> = <i>C</i>), and both accreditors know all.
         It's not very interesting.</p>
 
-        <table style="width: 40%; float: left; margin: 5px">
+        <table style="width: 40%; float: left; margin: 10px">
             <tr><td><a
                 href="./graphics/venn_diagrams_for_slides_7.png"><img
                 src="./graphics/venn_diagrams_for_slides_7_400w.png"
                 alt="completely overlapping Venn
                 diagrams"></a></td></tr>
             <tr><td>&nbsp;</td></tr>
-            <tr><td style="text-align: center"><em>The degenerate
+            <tr><td style="text-align: center">Figure 8. <em>The degenerate
             case</em></td></tr></table>
 
         <p>That was the abstract situation&mdash;one that models
@@ -629,9 +632,9 @@
         more&mdash;Top Secret things. Regardless, it ought to be a solvable
         problem, because there is no inaccessible knowledge. There is
         information asymmetry, but no hidden information this time. (See
-        the figure below and to the right.)</p>
+        Figure 9, below and to the right.)</p>
 
-        <table style="width: 40%; float: right; margin: 5px">
+        <table style="width: 40%; float: right; margin: 10px">
             <tr><td><a
                 href="./graphics/venn_diagrams_for_slides_8.png"><img
                 src="./graphics/venn_diagrams_for_slides_8_400w.png"
@@ -640,8 +643,8 @@
                 overlapping the inner circle of the larger
                 one"></a></td></tr>
             <tr><td>&nbsp;</td></tr>
-            <tr><td style="text-align: center"><em>Collateral CDS with
-                different security clearances</em></td></tr></table>
+            <tr><td style="text-align: center">Figure 9. <em>Collateral CDS with
+                different security clearances and forced communication</em></td></tr></table>
 
         <p>Oh, no&mdash;it happened again! As security testing progresses,
         it can occur that the high side accreditor becomes aware of
@@ -653,7 +656,7 @@
         talk about, because they're legitimately classified. But the area
         in red represents <em>forced communication</em>.</p>
 
-        <table style="width: 40%; float: left; margin: 5px">
+        <table style="width: 40%; float: left; margin: 10px">
             <tr><td><a
             href="./graphics/venn_diagrams_for_slides_9.png"><img
             src="./graphics/venn_diagrams_for_slides_9_400w.png" alt="a
@@ -661,29 +664,32 @@
             circle of a larger one, partially overlapping the inner circle
             of the larger one"></a></td></tr>
         <tr><td>&nbsp;</td></tr>
-        <tr><td style="text-align: center"><em>Summary of collateral CDS
-            difficulties: information leakage, &lsquo;guilty
+        <tr><td style="text-align: center">Figure 10. <em>Summary of
+            collateral CDS difficulties: information leakage, &lsquo;guilty
             knowledge&rsquo;, and higher-classified threats and
             mitigations</em></td></tr></table>
 
-        <p>There is a paradox in the Bell&ndash;LaPadula security model. If
-        you clear your accreditors only to the level they need to be
-        cleared to do their jobs, then occasionally some desirable
+        <p>There is a paradox in the Bell&ndash;LaPadula security model <a
+        href="#thesis-reference">[1]</a>. Should you follow the letter and the
+        spirit of the law, clearing your accreditors only to the level
+        they need to be cleared to do their jobs, then occasionally some
+        desirable
         information flows are inhibited and some undesirable information
         flows are forced. If, on the other hand, you clear a pool of
-        accreditors to Top Secret, and you use them on jobs that don't
+        accreditors to Top Secret, and use them on jobs that don't
         require a Top Secret clearance all the time, then the information
         asymmetry disappears and the information leakage doesn't happen. It
         is a paradox, that loosening the security rules actually improves
         security.</p>
 
-        <p>In some reachable cases, that is, in <em>real</em> installation
+        <p>We conclude, therefore, that in some reachable cases, that is,
+        in the <em>real world</em> installation
         problems that cross domain system developers and installers
         sometimes encounter in the field, desirable information flows
         may be inhibited, or undesirable information flows may be
         forced. These represent information asymmetry in the
-        accreditor-to-accreditor relationship and are <i>logical
-        consequences</i> of the hierarchical security relationship. We
+        accreditor-to-accreditor relationship and are logical
+        consequences of the hierarchical security relationship. We
         can't prevent them&mdash;the possibility is inherent, as we have
         seen, in SCI, international, and collateral accreditations.</p>
         
@@ -693,7 +699,11 @@
         testing and development in order to streamline the process and
         reduce the cost (in both time and dollars) of CDS deployments.</p>
 
-        <p>More to come.</p>
+        <p><b>References:</b></p>
+
+        <p id="thesis-reference">[1] Loughry, J. <i>Security Test and
+        Evaluation of Cross Domain Systems.</i> PhD thesis, University of
+        Oxford, 2016.</p>
 
         <h2 id="404">Testing Custom 404 Error Page</h2>
         <p class="posting-date">7th February 2015</p>

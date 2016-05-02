@@ -1,1 +1,1 @@
-add rest of targets
+add figure numbers to Venn diagram article; slightly improve wording
