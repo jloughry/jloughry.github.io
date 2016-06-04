@@ -25,6 +25,7 @@ all::
 	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(404_page)
 	@echo $$(($$(cat $(build_counter)) + 1)) > $(build_counter)
 	make commit
+	@echo "Now copy the files to the new web server; this isn't it."
 
 clean::
 	rm -fv $(temporary_files)
