@@ -1,1 +1,1 @@
-update Ruby version in .travis.yml
+Jekyll doesn't like symlinks; copy get_commit_message.sh here.
