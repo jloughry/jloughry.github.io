@@ -1,1 +1,1 @@
-Jekyll doesn't like symlinks; copy get_commit_message.sh here.
+add commit_message.txt to .gitignore file
