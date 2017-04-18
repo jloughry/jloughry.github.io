@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
-<html>
+<html manifest="manifest.appcache">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta name="keywords" content="Scheme language, consulting, blog"/>
+		<meta name="keywords" content="security"/>
 		<meta name="author" content="Joe Loughry"/>
-		<meta name="description" content="C&amp;Adocs, Inc. company web site"/>
+		<meta name="description" content="Security contact for call-with-current-continuation.com"/>
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -22,55 +22,45 @@
 		<meta name="msapplication-TileColor" content="#663399"/>
 		<meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
 		<meta name="msapplication-config"
-			content="http://cnadocs.com/browserconfig.xml"/>
-		<meta name="application-name" content="(call/cc company)  ;; consulting"/>
-		<link rel="stylesheet" href="style.css">
+			content="http://call-with-current-continuation.com/browserconfig.xml"/>
+		<meta name="application-name" content="(call/cc security)  ;; blog"/>
+		<link rel="stylesheet" href="../style.css">
 		<link type="text/plain" rel="author"
-			href="http://www.cnadocs.com/humans.txt">
-		<title>(call/cc company)</title>
+			href="http://www.call-with-current-continuation.com/humans.txt">
+		<title>(call/cc security)</title>
 	</head>
 	<body>
-		<a href="http://cnadocs.com"
+		<a href="http://call-with-current-continuation.com"
             style="text-decoration: none"><h1>
 			<span class="punct">(</span><!--
-			--><span class="headline-keyword">call-with-current-continuation</span>
-			<span class="headline-function">solutions</span><span class="punct">)</span>
-			<span class="headline-comment">;; consulting</span>
+			--><span
+			class="headline-keyword">call-with-current-continuation</span>
+			<span
+			class="headline-function">security-contact</span><span
+			class="punct">)</span>
+			<span class="headline-comment">;; email</span>
 		</h1></a>
-
-        <a href="https://travis-ci.org/jloughry/jloughry.github.io"><img
-            src="https://travis-ci.org/jloughry/jloughry.github.io.svg"
-            alt="build status"/></a>
 
         <!-- end of page header -->
 
-        <h2>Computer Security Compliance<sup><span style="font-size: 50%">TM</span></sup></h2>
+        <h2>Security Researchers</h2>
+        <p class="posting-date">Updated 9th December 2015</p>
 
-        <p>If your business is regulated by HIPAA, FISMA, PCI, RMF, or
-        the EU Data Protection Directive, then <b>Computer Security
-        Compliance<sup><span style="font-size: 50%">TM</span</sup></b>
-        is crucial. We can help you navigate poorly explained standards,
-        producing all the necessary documentation to reach your desired
-        Safe Harbor.
-        </p>
+        <p>This site uses entirely static HTML for security and handles
+        no user data. This page is not cached so the information here is
+        always up to date.</p>
 
-		<h2>About the company</h2>
-
-		<p>The software R&amp;D and C&amp;A consulting
-        firm <a href="http://www.CnAdocs.com"><!--
-        -->C&amp;Adocs, Inc.</a>, with twenty-five years
-        direct experience, is active in the cross domain solutions and
-        cross domain system (CDS) Assessment and Authorization (A&amp;A)
-        space.</p>
-        
-		<!-- This trick using comments is useful for wrapping long lines. -->
-
-		<p>Contact us:
-		<a href="mailto:help@CnAdocs.com?subject=Consulting%20inquiry"><!--
-		-->help@CnAdocs.com</a></p>
+        <p>If you've found a security problem, please tell us about
+        it! Email to
+		<a href="mailto:Joe.Loughry@call-with-current-continuation.com?subject=Security%20contact"><!--
+		-->Joe.Loughry@call-with-current-continuation.com</a> and PGP
+		public key
+        <a href="http://call-with-current-continuation.com/Joe.Loughry.txt"><!--
+        --><code>2C3B 11A1 CE7C 5B1F 87BC  F5D0 299D 7116 EDC2 ABE5</code></a>
+        will be read immediately and answered.</p>
 
 		<hr class="footnote">
-		<p class="footnote"><!-- BUILD NUMBER -->Build 166</p>
+		<p class="footnote"><!-- BUILD NUMBER -->Build 168</p>
 
         <!-- for Google Analytics -->
         <script>
