@@ -1,1 +1,1 @@
-add note to Makefile re:new web server
+Link to résumé on top of blog

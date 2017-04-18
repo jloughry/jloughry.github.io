@@ -19,10 +19,10 @@ temporary_files = *.bak consolidated_bibtex_file.bib
 .PHONY : security # there's a directory named security, so we need this
 
 all::
-	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(blog_page)
-	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(company_page)
-	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(security_page)
-	sed -i 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(404_page)
+	sed -i backup 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(blog_page)
+	sed -i backup 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(company_page)
+	sed -i backup 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(security_page)
+	sed -i backup 's/\(<\!-- BUILD NUMBER -->Build\) [0-9]*/\1 $(build_number_value)/g' $(404_page)
 	@echo $$(($$(cat $(build_counter)) + 1)) > $(build_counter)
 	make commit
 	@echo "Now copy the files to the new web server; this isn't it."
