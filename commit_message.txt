@@ -1,1 +1,1 @@
-scp in Makefile
+update Ruby version in .travis.yml
