@@ -181,10 +181,10 @@ sync:
 	fi
 
 notes:
-	(cd $(github_repository_level)/notes.new && vi notes.tex)
+	(cd $(github_repository_level)/notes.new && make notes)
 
 quotes:
-	(cd $(github_repository_level)/notes.new && vi quotes.tex)
+	(cd $(github_repository_level)/notes.new && make quotes)
 
 bibtex:
 	(cd $(github_repository_level)/bibtex && make vi)

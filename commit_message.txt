@@ -1,1 +1,1 @@
-fix old path in makefile
+use local target to get the expected behaviour
