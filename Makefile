@@ -81,7 +81,7 @@ spell::
 # a thesis to write.
 #
 
-github_repository_level = /cygdrive/c/Documents\ and\ Settings/rjl/My\ Documents/thesis/github
+github_repository_level = ~/thesis/github
 
 #
 # This Makefile does not include common.mk but instead incorporates much

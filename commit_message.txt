@@ -1,1 +1,1 @@
-add commit_message.txt to .gitignore file
+fix old path in makefile
